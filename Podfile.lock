@@ -1,0 +1,16 @@
+PODS:
+  - MPDXiOSLib (0.1.1)
+
+DEPENDENCIES:
+  - MPDXiOSLib (~> 0.1.0)
+
+SPEC REPOS:
+  https://github.com/CruGlobal/cocoapods-specs.git:
+    - MPDXiOSLib
+
+SPEC CHECKSUMS:
+  MPDXiOSLib: b379908d9683d1c34bc96aedffa0980596330078
+
+PODFILE CHECKSUM: 1dfd4fe882d88cacbca46c805760f527e8093900
+
+COCOAPODS: 1.11.2
