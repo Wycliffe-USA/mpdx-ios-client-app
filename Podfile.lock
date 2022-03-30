@@ -1,15 +1,202 @@
 PODS:
-  - MPDXiOSLib (0.1.1)
+  - Alamofire (4.9.1)
+  - FirebaseABTesting (7.11.0):
+    - FirebaseCore (~> 7.0)
+  - FirebaseAnalytics (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement (= 7.0.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - FirebaseCore (7.3.0):
+    - FirebaseCoreDiagnostics (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.3.0):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30906.0)
+  - FirebaseCrashlytics (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleDataTransport (~> 8.0)
+    - nanopb (~> 2.30906.0)
+    - PromisesObjC (~> 1.2)
+  - FirebaseInstallations (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
+    - PromisesObjC (~> 1.2)
+  - FirebasePerformance (7.0.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - FirebaseRemoteConfig (~> 7.0)
+    - GoogleDataTransport (~> 8.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/ISASwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.12)
+  - FirebaseRemoteConfig (7.11.0):
+    - FirebaseABTesting (~> 7.0)
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+  - GoogleAnalytics (3.20.0)
+  - GoogleAppMeasurement (7.0.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30906.0)
+  - GoogleDataTransport (8.1.0):
+    - nanopb (~> 2.30906.0)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleTagManager (7.2.0):
+    - FirebaseAnalytics (~> 7.0)
+    - GoogleAnalytics (~> 3.17)
+    - GoogleUtilitiesLegacy (~> 1.3)
+  - GoogleToolboxForMac/Defines (2.3.2)
+  - GoogleToolboxForMac/Logger (2.3.2):
+    - GoogleToolboxForMac/Defines (= 2.3.2)
+  - "GoogleToolboxForMac/NSData+zlib (2.3.2)":
+    - GoogleToolboxForMac/Defines (= 2.3.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.7.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/ISASwizzler (7.7.0)
+  - GoogleUtilities/Logger (7.7.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.7.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.7.0)"
+  - GoogleUtilities/Reachability (7.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilitiesLegacy (1.3.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GTMSessionFetcher/Core (1.7.1)
+  - Horatio (0.3.2-SNAPSHOT):
+    - Horatio/Core (= 0.3.2-SNAPSHOT)
+  - Horatio/Core (0.3.2-SNAPSHOT)
+  - MPDXiOSLib (0.1.3):
+    - Alamofire (~> 4.4)
+    - FirebaseAnalytics (= 7.0.0)
+    - FirebaseCore
+    - FirebaseCrashlytics (= 7.0.0)
+    - FirebasePerformance (= 7.0.0)
+    - GoogleTagManager (~> 7.2.0)
+    - Horatio (= 0.3.2-SNAPSHOT)
+    - OktaAuthentication (~> 1.2.1)
+    - PromiseKit
+    - PromiseKit/Alamofire
+    - RequestOperation (~> 1.2.1)
+  - nanopb (2.30906.0):
+    - nanopb/decode (= 2.30906.0)
+    - nanopb/encode (= 2.30906.0)
+  - nanopb/decode (2.30906.0)
+  - nanopb/encode (2.30906.0)
+  - OktaAuthentication (1.2.1):
+    - OktaOidc (~> 3.10.3)
+  - OktaOidc (3.10.8):
+    - OktaOidc/AppAuth (= 3.10.8)
+    - OktaOidc/Okta (= 3.10.8)
+  - OktaOidc/AppAuth (3.10.8)
+  - OktaOidc/Okta (3.10.8):
+    - OktaOidc/AppAuth
+  - PromiseKit (6.17.0):
+    - PromiseKit/CorePromise (= 6.17.0)
+    - PromiseKit/Foundation (= 6.17.0)
+    - PromiseKit/UIKit (= 6.17.0)
+  - PromiseKit/Alamofire (6.17.0):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.17.0)
+  - PromiseKit/Foundation (6.17.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.17.0):
+    - PromiseKit/CorePromise
+  - PromisesObjC (1.2.12)
+  - Protobuf (3.19.4)
+  - RequestOperation (1.2.1)
 
 DEPENDENCIES:
   - MPDXiOSLib (~> 0.1.0)
 
 SPEC REPOS:
   https://github.com/CruGlobal/cocoapods-specs.git:
+    - Horatio
     - MPDXiOSLib
+    - OktaAuthentication
+    - RequestOperation
+  trunk:
+    - Alamofire
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseInstallations
+    - FirebasePerformance
+    - FirebaseRemoteConfig
+    - GoogleAnalytics
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleSymbolUtilities
+    - GoogleTagManager
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GoogleUtilitiesLegacy
+    - GTMSessionFetcher
+    - nanopb
+    - OktaOidc
+    - PromiseKit
+    - PromisesObjC
+    - Protobuf
 
 SPEC CHECKSUMS:
-  MPDXiOSLib: b379908d9683d1c34bc96aedffa0980596330078
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
+  FirebaseAnalytics: c1166b7990bae464c6436132510bb718c6680f80
+  FirebaseCore: 4d3c72622ce0e2106aaa07bb4b2935ba2c370972
+  FirebaseCoreDiagnostics: d50e11039e5984d92c8a512be2395f13df747350
+  FirebaseCrashlytics: bd430b7323e8b49492a93e563e81899d0615f917
+  FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
+  FirebasePerformance: 4341f46dd638e6293aeaeee31d85e30ac34f63f7
+  FirebaseRemoteConfig: 0ea30de5fb0231df8c1bdcdf3b6c23bdc5066131
+  GoogleAnalytics: 01e4c5a04544a3608f93e970ce0817836897c5a5
+  GoogleAppMeasurement: 7790ef975d1d463c8614cd949a847e612edf087a
+  GoogleDataTransport: 116c84c4bdeb76be2a7a46de51244368f9794eab
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleTagManager: 9d8981519a985e37d5d86e46b9a58d404094a814
+  GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
+  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GoogleUtilitiesLegacy: 5501bedec1646bd284286eb5fc9453f7e23a12f4
+  GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
+  Horatio: 9f92828e17f14e83de9109ddef0c25628002e59c
+  MPDXiOSLib: a2ec6a4e576631a7c8368473f673ca4930e252e0
+  nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
+  OktaAuthentication: 27827052e003619278ff7df61b3f04212b070ced
+  OktaOidc: f7157bfa83f02bce2f517b2e1388c60143800fc5
+  PromiseKit: 996202d4cae72b7801b312abef4cd2f995b2978a
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Protobuf: 235750e4696ff59fb07d949a9dbbc92b3c0700fe
+  RequestOperation: 8691f9ea157729c2a554d90200d2ea31dd7bba60
 
 PODFILE CHECKSUM: 1dfd4fe882d88cacbca46c805760f527e8093900
 
