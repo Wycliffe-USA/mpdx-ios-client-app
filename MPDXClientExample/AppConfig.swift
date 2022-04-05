@@ -56,11 +56,12 @@ class AppConfig: ConfigType {
     }
     
     var googleAnalyticsConfiguration: GoogleAnalyticsConfiguration? {
-        
+        return nil
+        /*
         return GoogleAnalyticsConfiguration(
             gaiIdentifier: "UA-325725-34",
             debugDispatchIntervalForDebuggingGoogleAnalytics: nil
-        )
+        )*/
     }
 }
 
