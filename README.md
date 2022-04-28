@@ -16,4 +16,8 @@ The purpose of this project is to facilitate in the creation of your templated M
 
 ![alt text](ReadMeAssets/xcode-choose-app-template.png)
 
+3. For Interface choose Storyboard and for Language choose Swift.
+
+![alt text](ReadMeAssets/xcode-storyboard-and-swift.png)
+
 ### Configuring Your App
