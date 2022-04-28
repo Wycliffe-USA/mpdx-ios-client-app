@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return self.app.application(app, open: url, options: options)
     }
     
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         
         return app.application(application, continue: userActivity, restorationHandler: restorationHandler)
     }
