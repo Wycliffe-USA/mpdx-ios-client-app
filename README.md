@@ -9,9 +9,11 @@ The purpose of this project is to facilitate in the creation of your templated M
 ### Configuring Your Xcode Project
 
 1. Start by creating a new Xcode project.
+
 ![alt text](ReadMeAssets/xcode-create-new-project.png)
 
 2. Choose App for the project template.
+
 ![alt text](ReadMeAssets/xcode-choose-app-template.png)
 
 ### Configuring Your App
