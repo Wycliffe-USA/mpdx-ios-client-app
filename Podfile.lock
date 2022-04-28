@@ -90,11 +90,11 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilitiesLegacy (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
-  - GTMSessionFetcher/Core (1.7.1)
+  - GTMSessionFetcher/Core (1.7.2)
   - Horatio (0.3.2-SNAPSHOT):
     - Horatio/Core (= 0.3.2-SNAPSHOT)
   - Horatio/Core (0.3.2-SNAPSHOT)
-  - MPDXiOSLib (0.1.3):
+  - MPDXiOSLib (0.1.6):
     - Alamofire (~> 4.4)
     - FirebaseAnalytics (= 7.0.0)
     - FirebaseCore
@@ -132,7 +132,7 @@ PODS:
   - PromiseKit/UIKit (6.17.0):
     - PromiseKit/CorePromise
   - PromisesObjC (1.2.12)
-  - Protobuf (3.19.4)
+  - Protobuf (3.20.1)
   - RequestOperation (1.2.1)
 
 DEPENDENCIES:
@@ -187,17 +187,17 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GoogleUtilitiesLegacy: 5501bedec1646bd284286eb5fc9453f7e23a12f4
-  GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   Horatio: 9f92828e17f14e83de9109ddef0c25628002e59c
-  MPDXiOSLib: a2ec6a4e576631a7c8368473f673ca4930e252e0
+  MPDXiOSLib: b23995fb924f35adfd284119c67a0acdab677f9c
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   OktaAuthentication: 27827052e003619278ff7df61b3f04212b070ced
   OktaOidc: f7157bfa83f02bce2f517b2e1388c60143800fc5
   PromiseKit: 996202d4cae72b7801b312abef4cd2f995b2978a
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Protobuf: 235750e4696ff59fb07d949a9dbbc92b3c0700fe
+  Protobuf: b60ec2f51ad74765f44d0c09d2e0579d7de21745
   RequestOperation: 8691f9ea157729c2a554d90200d2ea31dd7bba60
 
-PODFILE CHECKSUM: 1dfd4fe882d88cacbca46c805760f527e8093900
+PODFILE CHECKSUM: d960d2898e057fa6acea52c235648c900219960b
 
 COCOAPODS: 1.11.2
