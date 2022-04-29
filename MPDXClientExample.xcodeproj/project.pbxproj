@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A0F366186D88FA530BD1169 /* libPods-MPDXClientExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AAEAB61464218A933963ED /* libPods-MPDXClientExampleTests.a */; };
 		2A13B9C6D003E0675D7FF1E5 /* libPods-MPDXClientExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C520F26A38544D83DE1867 /* libPods-MPDXClientExample.a */; };
+		45082E7D281C26BB00173C99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45082E7C281C26BB00173C99 /* README.md */; };
 		457CD93027EA77DA00323984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457CD92F27EA77DA00323984 /* AppDelegate.swift */; };
 		457CD93927EA77DC00323984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457CD93827EA77DC00323984 /* Assets.xcassets */; };
 		457CD93C27EA77DC00323984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457CD93A27EA77DC00323984 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45082E7C281C26BB00173C99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		457CD92C27EA77DA00323984 /* MPDXClientExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDXClientExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457CD92F27EA77DA00323984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457CD93827EA77DC00323984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		457CD92327EA77DA00323984 = {
 			isa = PBXGroup;
 			children = (
+				45082E7C281C26BB00173C99 /* README.md */,
 				457CD92E27EA77DA00323984 /* MPDXClientExample */,
 				457CD94527EA77DD00323984 /* MPDXClientExampleTests */,
 				457CD94F27EA77DD00323984 /* MPDXClientExampleUITests */,
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45082E7D281C26BB00173C99 /* README.md in Resources */,
 				457CD93C27EA77DC00323984 /* LaunchScreen.storyboard in Resources */,
 				457CD93927EA77DC00323984 /* Assets.xcassets in Resources */,
 			);
