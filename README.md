@@ -26,6 +26,9 @@ Start by creating a new Xcode project which will walk you through some preconfig
 ### Configure Your New Xcode Project
 - Open the .xcworkspace file that was created from the pod install command in the previous step.
 - Locate the Info.plist file (Located in the same directory as AppDelegate.swift) and delete the node named (Application Scene Manifest).
+
+![alt text](ReadMeAssets/xcode-info-plist-delete-scene-manifest.png)
+
 - Delete these 3 files SceneDelegate.swift, Main.storyboard, and ViewController.swift.
 - Select your main target then select the general tab.  In the Deployment Info section remove Main as the Main Inteface.  This box should be empty.  Set your deployment target to iOS 13 and check mark the devices and orientations.
 
