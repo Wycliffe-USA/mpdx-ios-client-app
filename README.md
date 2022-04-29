@@ -20,7 +20,7 @@ Start by creating a new Xcode project which will walk you through some preconfig
 ### Add The MPDXiOSLib Dependency
 
 - Install the cocoapods dependency manager.  Install instructions are here https://cocoapods.org/.
-- Add a Podfile to your project directory.  You can review the MPDXClientExample Podfile for reference on setting that up here https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/add-documentation-to-readme/Podfile.  NOTE that your target name or names(if including tests) will be different than the MPDXClientExample and MPDXClientExampleTests target names.  The main target name will match the Xcode project name.
+- Add a Podfile to your project directory.  You can review the MPDXClientExample Podfile for reference on setting that up here https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/Podfile.  NOTE that your target name or names(if including tests) will be different than the MPDXClientExample and MPDXClientExampleTests target names.  The main target name will match the Xcode project name.
 - Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure and build your app.
     
 ### Configure Your New Xcode Project
@@ -30,8 +30,6 @@ Start by creating a new Xcode project which will walk you through some preconfig
 ![alt text](ReadMeAssets/xcode-info-plist-delete-scene-manifest.png)
 
 - Delete these 3 files SceneDelegate.swift, Main.storyboard, and ViewController.swift.
-
-![alt text](ReadMeAssets/xcode-delete-files.png)
 
 - Select your main target then select the general tab.  In the Deployment Info section remove Main as the Main Inteface.  This box should be empty.  Set your deployment target to iOS 13 and check mark the devices and orientations.
 
