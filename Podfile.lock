@@ -136,12 +136,11 @@ PODS:
   - RequestOperation (1.2.1)
 
 DEPENDENCIES:
-  - MPDXiOSLib (~> 0.1.0)
+  - MPDXiOSLib (from `../mpdx-ios-lib`)
 
 SPEC REPOS:
   https://github.com/CruGlobal/cocoapods-specs.git:
     - Horatio
-    - MPDXiOSLib
     - OktaAuthentication
     - RequestOperation
   trunk:
@@ -169,6 +168,10 @@ SPEC REPOS:
     - PromisesObjC
     - Protobuf
 
+EXTERNAL SOURCES:
+  MPDXiOSLib:
+    :path: "../mpdx-ios-lib"
+
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
@@ -189,7 +192,7 @@ SPEC CHECKSUMS:
   GoogleUtilitiesLegacy: 5501bedec1646bd284286eb5fc9453f7e23a12f4
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   Horatio: 9f92828e17f14e83de9109ddef0c25628002e59c
-  MPDXiOSLib: b23995fb924f35adfd284119c67a0acdab677f9c
+  MPDXiOSLib: c68e66d6b4c57fd1e39a2c2408118db36e5235e1
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   OktaAuthentication: 27827052e003619278ff7df61b3f04212b070ced
   OktaOidc: f7157bfa83f02bce2f517b2e1388c60143800fc5
@@ -198,6 +201,6 @@ SPEC CHECKSUMS:
   Protobuf: b60ec2f51ad74765f44d0c09d2e0579d7de21745
   RequestOperation: 8691f9ea157729c2a554d90200d2ea31dd7bba60
 
-PODFILE CHECKSUM: d960d2898e057fa6acea52c235648c900219960b
+PODFILE CHECKSUM: d6bb9991c847637f15074938b1ced22a83ddbf08
 
 COCOAPODS: 1.11.2

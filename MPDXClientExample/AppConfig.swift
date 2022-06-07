@@ -42,26 +42,15 @@ class AppConfig: ConfigType {
     }
     
     var deepLinkingConfiguration: DeepLinkingConfiguration? {
-        return DeepLinkingConfiguration(
-            contactsDeepLinkHost: "www.mpdx.org"
-        )
+        return nil
     }
     
     var firebaseConfiguration: FirebaseConfiguration? {
         return nil
-        /*return FirebaseConfiguration(
-            firebaseGoogleServiceFileName: "GoogleService-Info",
-            shouldEnableFirebaseDebugArgumentsForFirebaseAnalyticsDebugView: false
-        )*/
     }
     
     var googleAnalyticsConfiguration: GoogleAnalyticsConfiguration? {
         return nil
-        /*
-        return GoogleAnalyticsConfiguration(
-            gaiIdentifier: "UA-325725-34",
-            debugDispatchIntervalForDebuggingGoogleAnalytics: nil
-        )*/
     }
 }
 

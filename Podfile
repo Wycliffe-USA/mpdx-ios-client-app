@@ -7,7 +7,8 @@ use_modular_headers!
 
 def shared_pods
 
-  pod 'MPDXiOSLib', '~> 0.1.0'
+  #pod 'MPDXiOSLib', '~> 0.1.0'
+  pod 'MPDXiOSLib', :path => '../mpdx-ios-lib' #development
 end
 
 target 'MPDXClientExample' do
