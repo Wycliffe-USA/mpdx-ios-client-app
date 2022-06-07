@@ -37,3 +37,4 @@ Start by creating a new Xcode project which will walk you through some preconfig
     
 ### Configure Your App
 
+App configuration is done at run-time and requires that you initialize an App instance with a configuration that conforms to ConfigType. You can view the example’s AppDelegate.swift and AppConfig.swift to see how this is setup.
