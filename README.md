@@ -31,7 +31,7 @@ Start by creating a new Xcode project which will walk you through some preconfig
 
 - Delete these 3 files SceneDelegate.swift, Main.storyboard, and ViewController.swift.
 
-- Select your main target then select the general tab.  In the Deployment Info section remove Main as the Main Inteface.  This box should be empty.  Set your deployment target to iOS 13 and check mark the devices and orientations.
+- Select your main target then select the general tab.  In the Deployment Info section remove Main as the Main Interface.  This box should be empty.  Set your deployment target to iOS 14 and check mark the devices and orientations.
 
 ![alt text](ReadMeAssets/xcode-target-general-deployment-info.png)
     
