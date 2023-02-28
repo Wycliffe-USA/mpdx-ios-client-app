@@ -7,11 +7,10 @@
 
 import Foundation
 import MPDXiOSLib
-import OktaAuthentication
 
-class AppConfig: ConfigType {
+class AppConfig: AppConfigInterface {
     
-    required init() {
+    init() {
         
     }
     
@@ -20,15 +19,15 @@ class AppConfig: ConfigType {
     }
     
     var authenticationConfiguration: AuthenticationConfiguration {
-                
+             
         return AuthenticationConfiguration(
-            authenticateProvider: "okta",
-            userAuthentication: CruOktaAuthentication(
+            authentication: MPDXOktaAuthentication<NoDecodableOktaUserData>(
                 clientId: "0oa1lhhexumq8ueTU0h8",
                 logoutRedirectUri: "org.cru.mpdx:/logout",
                 issuer: "https://signon.okta.com",
                 redirectUri: "org.cru.mpdx:/login"
-            )
+            ),
+            mpdxApiAuthenticationProvider: .okta
         )
     }
     
@@ -50,6 +49,10 @@ class AppConfig: ConfigType {
     }
     
     var googleAnalyticsConfiguration: GoogleAnalyticsConfiguration? {
+        return nil
+    }
+    
+    var impersonateConfiguration: MPDXApiImpersonateConfiguration? {
         return nil
     }
 }

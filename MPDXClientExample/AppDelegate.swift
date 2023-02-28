@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         App(config: AppDelegate.getAppConfig())
     }()
     
-    private static func getAppConfig() -> ConfigType {
+    private static func getAppConfig() -> AppConfigInterface {
         return AppConfig()
     }
     

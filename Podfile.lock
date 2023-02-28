@@ -49,7 +49,7 @@ PODS:
     - FirebaseInstallations (~> 7.0)
     - GoogleUtilities/Environment (~> 7.0)
     - "GoogleUtilities/NSData+zlib (~> 7.0)"
-  - GoogleAnalytics (3.20.0)
+  - GoogleAnalytics (3.21.0)
   - GoogleAppMeasurement (7.0.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
     - GoogleUtilities/MethodSwizzler (~> 7.0)
@@ -68,25 +68,25 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.3.2)
   - "GoogleToolboxForMac/NSData+zlib (2.3.2)":
     - GoogleToolboxForMac/Defines (= 2.3.2)
-  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+  - GoogleUtilities/AppDelegateSwizzler (7.11.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.7.0):
+  - GoogleUtilities/Environment (7.11.0):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/ISASwizzler (7.7.0)
-  - GoogleUtilities/Logger (7.7.0):
+  - GoogleUtilities/ISASwizzler (7.11.0)
+  - GoogleUtilities/Logger (7.11.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.7.0):
+  - GoogleUtilities/MethodSwizzler (7.11.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.7.0):
+  - GoogleUtilities/Network (7.11.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.7.0)"
-  - GoogleUtilities/Reachability (7.7.0):
+  - "GoogleUtilities/NSData+zlib (7.11.0)"
+  - GoogleUtilities/Reachability (7.11.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (7.7.0):
+  - GoogleUtilities/UserDefaults (7.11.0):
     - GoogleUtilities/Logger
   - GoogleUtilitiesLegacy (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
@@ -94,7 +94,8 @@ PODS:
   - Horatio (0.3.2-SNAPSHOT):
     - Horatio/Core (= 0.3.2-SNAPSHOT)
   - Horatio/Core (0.3.2-SNAPSHOT)
-  - MPDXiOSLib (0.1.6):
+  - KeychainPasswordStore (1.0.0)
+  - MPDXiOSLib (0.2.3):
     - Alamofire (~> 4.4)
     - FirebaseAnalytics (= 7.0.0)
     - FirebaseCore
@@ -102,7 +103,8 @@ PODS:
     - FirebasePerformance (= 7.0.0)
     - GoogleTagManager (~> 7.2.0)
     - Horatio (= 0.3.2-SNAPSHOT)
-    - OktaAuthentication (~> 1.2.1)
+    - OAuth (~> 1.2.0)
+    - OktaAuthentication (~> 1.4.0)
     - PromiseKit
     - PromiseKit/Alamofire
     - RequestOperation (~> 1.2.1)
@@ -111,36 +113,43 @@ PODS:
     - nanopb/encode (= 2.30906.0)
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
-  - OktaAuthentication (1.2.1):
-    - OktaOidc (~> 3.10.3)
-  - OktaOidc (3.10.8):
-    - OktaOidc/AppAuth (= 3.10.8)
-    - OktaOidc/Okta (= 3.10.8)
-  - OktaOidc/AppAuth (3.10.8)
-  - OktaOidc/Okta (3.10.8):
+  - OAuth (1.2.0):
+    - KeychainPasswordStore (~> 1.0.0)
+    - OktaOidc (~> 3.11.2)
+    - RequestOperation (~> 1.2.1)
+  - OktaAuthentication (1.4.1):
+    - OktaOidc (~> 3.11.2)
+  - OktaOidc (3.11.2):
+    - OktaOidc/AppAuth (= 3.11.2)
+    - OktaOidc/Okta (= 3.11.2)
+  - OktaOidc/AppAuth (3.11.2)
+  - OktaOidc/Okta (3.11.2):
     - OktaOidc/AppAuth
-  - PromiseKit (6.17.0):
-    - PromiseKit/CorePromise (= 6.17.0)
-    - PromiseKit/Foundation (= 6.17.0)
-    - PromiseKit/UIKit (= 6.17.0)
-  - PromiseKit/Alamofire (6.17.0):
+  - PromiseKit (6.18.1):
+    - PromiseKit/CorePromise (= 6.18.1)
+    - PromiseKit/Foundation (= 6.18.1)
+    - PromiseKit/UIKit (= 6.18.1)
+  - PromiseKit/Alamofire (6.18.1):
     - Alamofire (~> 4.0)
     - PromiseKit/CorePromise
-  - PromiseKit/CorePromise (6.17.0)
-  - PromiseKit/Foundation (6.17.0):
+  - PromiseKit/CorePromise (6.18.1)
+  - PromiseKit/Foundation (6.18.1):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.17.0):
+  - PromiseKit/UIKit (6.18.1):
     - PromiseKit/CorePromise
   - PromisesObjC (1.2.12)
-  - Protobuf (3.20.1)
-  - RequestOperation (1.2.1)
+  - Protobuf (3.21.12)
+  - RequestOperation (1.2.2)
 
 DEPENDENCIES:
-  - MPDXiOSLib (from `../mpdx-ios-lib`)
+  - MPDXiOSLib (~> 0.2.0)
 
 SPEC REPOS:
   https://github.com/CruGlobal/cocoapods-specs.git:
     - Horatio
+    - KeychainPasswordStore
+    - MPDXiOSLib
+    - OAuth
     - OktaAuthentication
     - RequestOperation
   trunk:
@@ -168,10 +177,6 @@ SPEC REPOS:
     - PromisesObjC
     - Protobuf
 
-EXTERNAL SOURCES:
-  MPDXiOSLib:
-    :path: "../mpdx-ios-lib"
-
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   FirebaseABTesting: e66f1f80747792630d9b292966de206d5df9853b
@@ -182,25 +187,27 @@ SPEC CHECKSUMS:
   FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
   FirebasePerformance: 4341f46dd638e6293aeaeee31d85e30ac34f63f7
   FirebaseRemoteConfig: 0ea30de5fb0231df8c1bdcdf3b6c23bdc5066131
-  GoogleAnalytics: 01e4c5a04544a3608f93e970ce0817836897c5a5
+  GoogleAnalytics: abbea91ce20faea66c5b2305aa040d3f9992f66a
   GoogleAppMeasurement: 7790ef975d1d463c8614cd949a847e612edf087a
   GoogleDataTransport: 116c84c4bdeb76be2a7a46de51244368f9794eab
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleTagManager: 9d8981519a985e37d5d86e46b9a58d404094a814
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
-  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   GoogleUtilitiesLegacy: 5501bedec1646bd284286eb5fc9453f7e23a12f4
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   Horatio: 9f92828e17f14e83de9109ddef0c25628002e59c
-  MPDXiOSLib: c68e66d6b4c57fd1e39a2c2408118db36e5235e1
+  KeychainPasswordStore: d6d24712eeb411d08599c6c007dde8536b1797b7
+  MPDXiOSLib: a70c88e73772691b72cddf387bd4e9929ce0b23f
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
-  OktaAuthentication: 27827052e003619278ff7df61b3f04212b070ced
-  OktaOidc: f7157bfa83f02bce2f517b2e1388c60143800fc5
-  PromiseKit: 996202d4cae72b7801b312abef4cd2f995b2978a
+  OAuth: e50ed3aabcffb0de44322d6d0aa2fb90b95e57a5
+  OktaAuthentication: 4e132b062f3811ae2819d12f50ff2c18825dc611
+  OktaOidc: 15fb3d494103d4f07ba8a523b3347d02c4d30486
+  PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Protobuf: b60ec2f51ad74765f44d0c09d2e0579d7de21745
-  RequestOperation: 8691f9ea157729c2a554d90200d2ea31dd7bba60
+  Protobuf: 120350fc38646e2dedc26f49ecba778184ea1de2
+  RequestOperation: 7108fec71110338036303644fb1db7aa083bf73e
 
-PODFILE CHECKSUM: d6bb9991c847637f15074938b1ced22a83ddbf08
+PODFILE CHECKSUM: 3fbf0106cb9794e7eeb0f4cb15408672b0545be3
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

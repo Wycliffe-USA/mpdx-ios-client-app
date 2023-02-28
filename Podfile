@@ -1,14 +1,13 @@
 source 'https://cdn.cocoapods.org/'
 source 'https://github.com/CruGlobal/cocoapods-specs.git'
 
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 use_modular_headers!
 
 def shared_pods
 
-  #pod 'MPDXiOSLib', '~> 0.1.0'
-  pod 'MPDXiOSLib', :path => '../mpdx-ios-lib' #development
+  pod 'MPDXiOSLib', '~> 0.2.0'
 end
 
 target 'MPDXClientExample' do
