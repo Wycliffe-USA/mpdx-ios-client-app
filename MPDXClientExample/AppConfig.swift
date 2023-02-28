@@ -21,7 +21,7 @@ class AppConfig: AppConfigInterface {
     var authenticationConfiguration: AuthenticationConfiguration {
              
         return AuthenticationConfiguration(
-            authentication: MPDXOktaAuthentication<NoDecodableOktaUserData>(
+            authentication: MPDXOktaAuthentication<OktaUser>(
                 clientId: "0oa1lhhexumq8ueTU0h8",
                 logoutRedirectUri: "org.cru.mpdx:/logout",
                 issuer: "https://signon.okta.com",
