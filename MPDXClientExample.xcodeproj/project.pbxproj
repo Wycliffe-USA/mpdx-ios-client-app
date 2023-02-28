@@ -10,6 +10,8 @@
 		2A0F366186D88FA530BD1169 /* libPods-MPDXClientExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1AAEAB61464218A933963ED /* libPods-MPDXClientExampleTests.a */; };
 		2A13B9C6D003E0675D7FF1E5 /* libPods-MPDXClientExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C520F26A38544D83DE1867 /* libPods-MPDXClientExample.a */; };
 		45082E7D281C26BB00173C99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45082E7C281C26BB00173C99 /* README.md */; };
+		4528D67729AE4F4100ACA9EB /* OktaUser+MPDXOktaUserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4528D67529AE4F4100ACA9EB /* OktaUser+MPDXOktaUserCodable.swift */; };
+		4528D67829AE4F4100ACA9EB /* OktaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4528D67629AE4F4100ACA9EB /* OktaUser.swift */; };
 		457CD93027EA77DA00323984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457CD92F27EA77DA00323984 /* AppDelegate.swift */; };
 		457CD93927EA77DC00323984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457CD93827EA77DC00323984 /* Assets.xcassets */; };
 		457CD93C27EA77DC00323984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457CD93A27EA77DC00323984 /* LaunchScreen.storyboard */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		45082E7C281C26BB00173C99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4528D67529AE4F4100ACA9EB /* OktaUser+MPDXOktaUserCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OktaUser+MPDXOktaUserCodable.swift"; sourceTree = "<group>"; };
+		4528D67629AE4F4100ACA9EB /* OktaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OktaUser.swift; sourceTree = "<group>"; };
 		457CD92C27EA77DA00323984 /* MPDXClientExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDXClientExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457CD92F27EA77DA00323984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457CD93827EA77DC00323984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +99,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4528D67129AE4F4100ACA9EB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4528D67229AE4F4100ACA9EB /* Share */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4528D67229AE4F4100ACA9EB /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				4528D67329AE4F4100ACA9EB /* Data */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		4528D67329AE4F4100ACA9EB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4528D67429AE4F4100ACA9EB /* Authentication */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4528D67429AE4F4100ACA9EB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4528D67629AE4F4100ACA9EB /* OktaUser.swift */,
+				4528D67529AE4F4100ACA9EB /* OktaUser+MPDXOktaUserCodable.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		457CD92327EA77DA00323984 = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +158,12 @@
 		457CD92E27EA77DA00323984 /* MPDXClientExample */ = {
 			isa = PBXGroup;
 			children = (
-				45891DE227EB553400FA790D /* AppConfig.swift */,
-				457CD92F27EA77DA00323984 /* AppDelegate.swift */,
 				457CD93827EA77DC00323984 /* Assets.xcassets */,
 				457CD93D27EA77DC00323984 /* Info.plist */,
 				457CD93A27EA77DC00323984 /* LaunchScreen.storyboard */,
+				45891DE227EB553400FA790D /* AppConfig.swift */,
+				457CD92F27EA77DA00323984 /* AppDelegate.swift */,
+				4528D67129AE4F4100ACA9EB /* App */,
 			);
 			path = MPDXClientExample;
 			sourceTree = "<group>";
@@ -372,8 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4528D67729AE4F4100ACA9EB /* OktaUser+MPDXOktaUserCodable.swift in Sources */,
 				457CD93027EA77DA00323984 /* AppDelegate.swift in Sources */,
 				45891DE327EB553400FA790D /* AppConfig.swift in Sources */,
+				4528D67829AE4F4100ACA9EB /* OktaUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
