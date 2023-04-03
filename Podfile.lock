@@ -94,8 +94,8 @@ PODS:
   - Horatio (0.3.2-SNAPSHOT):
     - Horatio/Core (= 0.3.2-SNAPSHOT)
   - Horatio/Core (0.3.2-SNAPSHOT)
-  - KeychainPasswordStore (1.0.0)
-  - MPDXiOSLib (0.2.3):
+  - KeychainPasswordStore (1.0.1)
+  - MPDXiOSLib (0.2.8):
     - Alamofire (~> 4.4)
     - FirebaseAnalytics (= 7.0.0)
     - FirebaseCore
@@ -138,7 +138,7 @@ PODS:
   - PromiseKit/UIKit (6.18.1):
     - PromiseKit/CorePromise
   - PromisesObjC (1.2.12)
-  - Protobuf (3.21.12)
+  - Protobuf (3.22.1)
   - RequestOperation (1.2.2)
 
 DEPENDENCIES:
@@ -197,17 +197,17 @@ SPEC CHECKSUMS:
   GoogleUtilitiesLegacy: 5501bedec1646bd284286eb5fc9453f7e23a12f4
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   Horatio: 9f92828e17f14e83de9109ddef0c25628002e59c
-  KeychainPasswordStore: d6d24712eeb411d08599c6c007dde8536b1797b7
-  MPDXiOSLib: a70c88e73772691b72cddf387bd4e9929ce0b23f
+  KeychainPasswordStore: 01aa75354db8ee845d558f37f5200f34c5ced639
+  MPDXiOSLib: 8dc4ec40307f7525d546f6f120831735fb0e9f5a
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   OAuth: e50ed3aabcffb0de44322d6d0aa2fb90b95e57a5
   OktaAuthentication: 4e132b062f3811ae2819d12f50ff2c18825dc611
   OktaOidc: 15fb3d494103d4f07ba8a523b3347d02c4d30486
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
-  Protobuf: 120350fc38646e2dedc26f49ecba778184ea1de2
+  Protobuf: d7f7c8329edf5eb8af65547a8ba3e9c1cee927d5
   RequestOperation: 7108fec71110338036303644fb1db7aa083bf73e
 
 PODFILE CHECKSUM: 3fbf0106cb9794e7eeb0f4cb15408672b0545be3
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0
