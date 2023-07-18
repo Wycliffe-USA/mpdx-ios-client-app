@@ -44,7 +44,9 @@ NOTE: You can view the latest MPDXiOSLib version by viewing the .podspec [here](
 ### Configure Your New Xcode Project
 
 - Now it's time to finish configuring your Xcode project. 
-- The Xcode file to open will depend on the dependency manager used.  For Swift Package Manager open the .xcodeproj file.  For Cocoapods open the .xcworkspace file.
+- The Xcode file to open will depend on the dependency manager used. <br>  
+  - For Swift Package Manager open the .xcodeproj file. <br>
+  - For Cocoapods open the .xcworkspace file. <br>
 
 
 - TODO: Finish updating steps below.
