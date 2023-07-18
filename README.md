@@ -4,10 +4,10 @@ Example project to facilitate in the creation of your templated MPDX iOS App.
 
 ### Requirements
 
-Xcode Version: 14.2
-Swift Version: 5.7
-Minimum iOS Target: iOS 14
-MPDXiOSLib: (Supports both Cocoapods and Swift Package Manager)
+Xcode Version: 14.2 <br>
+Swift Version: 5.7 <br>
+Minimum iOS Target: iOS 14 <br>
+MPDXiOSLib: (Supports both Cocoapods and Swift Package Manager) <br>
 
 Follow these outlined steps to get your Xcode project setup and running against the MPDXiOSLib code-base.
 
