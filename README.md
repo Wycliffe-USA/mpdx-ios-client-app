@@ -42,6 +42,13 @@ NOTE: You can view the latest MPDXiOSLib version by viewing the .podspec [here](
 
     
 ### Configure Your New Xcode Project
+
+- Now it's time to finish configuring your Xcode project. 
+- The Xcode file to open will depend on the dependency manager used.  For Swift Package Manager open the .xcodeproj file.  For Cocoapods open the .xcworkspace file.
+
+
+- TODO: Finish updating steps below.
+
 - Open the .xcworkspace file that was created from the pod install command in the previous step.
 - Locate the Info.plist file (Located in the same directory as AppDelegate.swift) and delete the node named (Application Scene Manifest).
 
