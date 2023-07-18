@@ -13,9 +13,8 @@ Follow these outlined steps to get your Xcode project setup and running against 
 
 - [Create A New Xcode Project](#create-a-new-xcode-project)
 - [Install The MPDXiOSLib Dependency](#install-the-mpdxioslib-dependency)
+- [Install MPDXiOSLib With Swift Package Manager (Preferred)](#install-mpdxioslib-with-swift-package-manager-(preferred))
 - [Install MPDXiOSLib With Cocoapods](#install-mpdxioslib-with-cocoapods)
-- [Install MPDXiOSLib With Swift Package Manager](#install-mpdxioslib-with-swift-package-manager)
-- [Add The MPDXiOSLib Dependency](#add-the-mpdxioslib-dependency)
 - [Configure Your New Xcode Project](#configure-your-new-xcode-project)
 - [Configure Your App](#configure-your-app)
 
@@ -31,16 +30,15 @@ Start by creating a new Xcode project. These instructions have been updated for 
 
 Choose 1 of the next 2 steps to install the MPDXiOSLib dependency which now supports both Cocoapods and Swift Package Manager.
 
+NOTE: You can view the latest MPDXiOSLib version by viewing the .podspec [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/MPDXiOSLib.podspec#L4 or you can view the latest tag [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+
+### Install MPDXiOSLib With Swift Package Manager (Preferred)
+
 ### Install MPDXiOSLib With Cocoapods
 
-- Install the cocoapods dependency manager.  Install instructions are here https://cocoapods.org/.
-- Add a Podfile to your project directory.  You can review the MPDXClientExample-Cocoapods Podfile for reference on setting that up here .  NOTE that your target name or names(if including tests) will be different than the MPDXClientExample-Cocoapods target name.  The main target name will match the Xcode project name.
+- Install the cocoapods dependency manager.  Install instructions are [here](https://cocoapods.org/).
+- Add a Podfile to your project directory.  You can review the MPDXClientExampleCocoapods Podfile for reference on setting that up [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/update-for-xcode-14.2-and-mpdx-ios-lib/Cocoapods/Podfile).  NOTE that your target name or names(if including tests) will be different than the MPDXClientExampleCocoapods target name.  The main target name will match the Xcode project name.
 - Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure and build your app.
-
-### Install MPDXiOSLib With Swift Package Manager
-
-### Add The MPDXiOSLib Dependency
-
 
     
 ### Configure Your New Xcode Project
