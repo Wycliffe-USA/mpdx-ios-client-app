@@ -15,8 +15,6 @@ Follow these outlined steps to get your Xcode project setup and running against 
 
 - [Create A New Xcode Project](#create-a-new-xcode-project)
 - [Install The MPDXiOSLib Dependency](#install-the-mpdxioslib-dependency)
-- [Install MPDXiOSLib With Swift Package Manager](#install-mpdxioslib-with-swift-package-manager)
-- [Install MPDXiOSLib With Cocoapods](#install-mpdxioslib-with-cocoapods)
 - [Configure Your New Xcode Project](#configure-your-new-xcode-project)
 - [Configure Your App](#configure-your-app)
 
@@ -30,9 +28,12 @@ Start by creating a new Xcode project. Make sure to choose the following when cr
 
 ### Install The MPDXiOSLib Dependency
 
-Choose 1 of the next 2 steps to install the MPDXiOSLib dependency which supports both Cocoapods and Swift Package Manager.
+Choose 1 of the next 2 steps to install the MPDXiOSLib dependency.
 
-NOTE: You can view the latest MPDXiOSLib version by viewing the .podspec [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/MPDXiOSLib.podspec#L4) or you can view the latest tag [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+NOTE: You can view the latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags)
+
+- [Install MPDXiOSLib With Swift Package Manager](#install-mpdxioslib-with-swift-package-manager)
+- [Install MPDXiOSLib With Cocoapods](#install-mpdxioslib-with-cocoapods)
 
 ### Install MPDXiOSLib With Swift Package Manager
 
