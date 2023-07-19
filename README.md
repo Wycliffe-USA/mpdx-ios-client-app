@@ -8,6 +8,7 @@ Includes Swift Package Manager and Cocoapods example projects to facilitate in t
 - Xcode Version: 14.2 <br>
 - Minimum iOS Target: iOS 14 <br>
 - Dependency Manager: Swift Package Manager or Cocoapods <br>
+- MPDXiOSLib: View version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags). <br>
 
 ### Steps To Create Templated MPDX iOS App
 
