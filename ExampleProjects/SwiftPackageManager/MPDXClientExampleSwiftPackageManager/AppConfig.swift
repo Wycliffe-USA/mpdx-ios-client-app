@@ -16,17 +16,17 @@ class AppConfig: AppConfigInterface {
     }
     
     var apiBaseUrl: String {
-        return "https://api.stage.mpdx.org"
+        return "set-your-api-base-url"
     }
     
     var authenticationConfiguration: AuthenticationConfiguration {
              
         return AuthenticationConfiguration(
-            authentication: MPDXOktaAuthentication<OktaUser>(
-                clientId: "0oa1lhhexumq8ueTU0h8",
-                logoutRedirectUri: "org.cru.mpdx:/logout",
-                issuer: "https://signon.okta.com",
-                redirectUri: "org.cru.mpdx:/login"
+            authentication: MPDXOktaAuthentication<NoDecodableOktaUserData>(
+                clientId: "set-your-okta-client-id",
+                logoutRedirectUri: "set-your-okta-logout-redirect-uri",
+                issuer: "set-your-okta-issuer",
+                redirectUri: "set-your-okta-redirect-uri"
             ),
             mpdxApiAuthenticationProvider: .okta
         )
@@ -57,4 +57,3 @@ class AppConfig: AppConfigInterface {
         return nil
     }
 }
-

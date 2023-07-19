@@ -52,8 +52,8 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 
 - First install the [cocoapods dependency manager](https://cocoapods.org/).
 - Add a Podfile to your project directory.  You can review the MPDXClientExampleCocoapods Podfile for reference on setting that up [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/Cocoapods/Podfile).  NOTE that your target name or names(if including tests) will be different than the MPDXClientExampleCocoapods target name.  The main target name will match the Xcode project name.
-- View latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
-- Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure and build your app.
+- Also note the version might be later than the linked example.  Find the latest available version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+- Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure in the next step.
 
     
 ### Configure Your New Xcode Project
@@ -93,8 +93,10 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - Complete the AppDelegate.swift implementation. An example is [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/SwiftPackageManager/MPDXClientExampleSwiftPackageManager/AppDelegate.swift).
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-app-delegate.png) <br><br>
   - AppDelegate.swift will need an instance conforming to AppConfigInterface.swift.  See the next step for setting this up.
-- Add AppConfig.swift.  Follow the same instructions when adding AppDelegate.swift.
+- Add AppConfig.swift.  Follow the same instructions you used for adding the AppDelegate.swift file and add AppConfig.swift.
   - For an AppConfig.swift reference you can view that [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/SwiftPackageManager/MPDXClientExampleSwiftPackageManager/AppConfig.swift).
+  - Set your apiBaseUrl: String.
+  - Set your authenticationConfiguration: AuthenticationConfiguration.
 - Add usage descriptions. These are descriptions apple looks for when a user attempts to access device contacts or device face id. These files can't be bundled with  MPDXiOSLib and instead must be manually added to your Xcode project.
   - Download MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios-lib/archive/refs/heads/master.zip).
   - In finder look in the downloaded directory for /Sources/MPDXiOSLib/Resources/UsageDescriptions/ and copy the UsageDescriptions directory into your project directory where Assets.xcassets, Info.plist, and .entitlements live. Make sure you're in finder and not the Xcode project.
@@ -105,3 +107,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - You should now see the Usage Descriptions InfoPlist files in your Xcode project.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-usage-descriptions.png) <br><br>
   - That's it. You should now be able to build and run Xcode. 
+
+### App Localization
+
+Localizable.strings files are bundled in MPDXiOSLib and by default your templated MPDX App will support the following languages found [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/fastlane/.env.default#L3).
