@@ -12,8 +12,6 @@
 		450792E42A619DFD001CAA58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450792E32A619DFD001CAA58 /* Preview Assets.xcassets */; };
 		45A5B49F2A685DDD00B57EEE /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4982A685DDD00B57EEE /* AppConfig.swift */; };
 		45A5B4A02A685DDD00B57EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4992A685DDD00B57EEE /* AppDelegate.swift */; };
-		45A5B4A12A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B49D2A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */; };
-		45A5B4A22A685DDD00B57EEE /* OktaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B49E2A685DDD00B57EEE /* OktaUser.swift */; };
 		45A5B4B82A6865EA00B57EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45A5B4AF2A6865EA00B57EEE /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +24,6 @@
 		45A5B4972A685DA600B57EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		45A5B4982A685DDD00B57EEE /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		45A5B4992A685DDD00B57EEE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45A5B49D2A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OktaUser+MPDXOktaUserCodable.swift"; sourceTree = "<group>"; };
-		45A5B49E2A685DDD00B57EEE /* OktaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OktaUser.swift; sourceTree = "<group>"; };
 		45A5B4B02A6865EA00B57EEE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A5B4B12A6865EA00B57EEE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A5B4B22A6865EA00B57EEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -78,7 +74,6 @@
 				450792E12A619DFD001CAA58 /* MPDXClientExampleCocoapods.entitlements */,
 				45A5B4992A685DDD00B57EEE /* AppDelegate.swift */,
 				45A5B4982A685DDD00B57EEE /* AppConfig.swift */,
-				45A5B49A2A685DDD00B57EEE /* Share */,
 				450792E22A619DFD001CAA58 /* Preview Content */,
 				45A5B4AE2A6865EA00B57EEE /* UsageDescriptions */,
 			);
@@ -91,31 +86,6 @@
 				450792E32A619DFD001CAA58 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		45A5B49A2A685DDD00B57EEE /* Share */ = {
-			isa = PBXGroup;
-			children = (
-				45A5B49B2A685DDD00B57EEE /* Data */,
-			);
-			path = Share;
-			sourceTree = "<group>";
-		};
-		45A5B49B2A685DDD00B57EEE /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				45A5B49C2A685DDD00B57EEE /* Authentication */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		45A5B49C2A685DDD00B57EEE /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				45A5B49E2A685DDD00B57EEE /* OktaUser.swift */,
-				45A5B49D2A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */,
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		45A5B4AE2A6865EA00B57EEE /* UsageDescriptions */ = {
@@ -266,9 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A5B4A02A685DDD00B57EEE /* AppDelegate.swift in Sources */,
-				45A5B4A22A685DDD00B57EEE /* OktaUser.swift in Sources */,
 				45A5B49F2A685DDD00B57EEE /* AppConfig.swift in Sources */,
-				45A5B4A12A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

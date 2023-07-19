@@ -11,8 +11,6 @@
 		4575B0A62A6817D500A11377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A52A6817D500A11377 /* Assets.xcassets */; };
 		4575B0AA2A6817D500A11377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A92A6817D500A11377 /* Preview Assets.xcassets */; };
 		45A5B4932A68584E00B57EEE /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B48C2A68584E00B57EEE /* AppConfig.swift */; };
-		45A5B4942A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4902A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */; };
-		45A5B4952A68584E00B57EEE /* OktaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4912A68584E00B57EEE /* OktaUser.swift */; };
 		45A5B4962A68584E00B57EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4922A68584E00B57EEE /* AppDelegate.swift */; };
 		45A5B4AD2A68658A00B57EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45A5B4A42A68658A00B57EEE /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
@@ -24,8 +22,6 @@
 		4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPDXClientExampleSwiftPackageManager.entitlements; sourceTree = "<group>"; };
 		4575B0A92A6817D500A11377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45A5B48C2A68584E00B57EEE /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		45A5B4902A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OktaUser+MPDXOktaUserCodable.swift"; sourceTree = "<group>"; };
-		45A5B4912A68584E00B57EEE /* OktaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OktaUser.swift; sourceTree = "<group>"; };
 		45A5B4922A68584E00B57EEE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A5B4A52A68658A00B57EEE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A5B4A62A68658A00B57EEE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -73,7 +69,6 @@
 				4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */,
 				45A5B4922A68584E00B57EEE /* AppDelegate.swift */,
 				45A5B48C2A68584E00B57EEE /* AppConfig.swift */,
-				45A5B48D2A68584E00B57EEE /* Share */,
 				4575B0A82A6817D500A11377 /* Preview Content */,
 				45A5B4A32A68658A00B57EEE /* UsageDescriptions */,
 			);
@@ -86,31 +81,6 @@
 				4575B0A92A6817D500A11377 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		45A5B48D2A68584E00B57EEE /* Share */ = {
-			isa = PBXGroup;
-			children = (
-				45A5B48E2A68584E00B57EEE /* Data */,
-			);
-			path = Share;
-			sourceTree = "<group>";
-		};
-		45A5B48E2A68584E00B57EEE /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				45A5B48F2A68584E00B57EEE /* Authentication */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		45A5B48F2A68584E00B57EEE /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				45A5B4912A68584E00B57EEE /* OktaUser.swift */,
-				45A5B4902A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */,
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		45A5B4A32A68658A00B57EEE /* UsageDescriptions */ = {
@@ -208,8 +178,6 @@
 			files = (
 				45A5B4962A68584E00B57EEE /* AppDelegate.swift in Sources */,
 				45A5B4932A68584E00B57EEE /* AppConfig.swift in Sources */,
-				45A5B4952A68584E00B57EEE /* OktaUser.swift in Sources */,
-				45A5B4942A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
