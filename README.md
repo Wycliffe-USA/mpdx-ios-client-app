@@ -92,7 +92,8 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - If Xcode requests to configure an Objective-C briding header choose Don't Create.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-dont-create-briding-header.png) <br><br>
   - Complete the AppDelegate.swift implementation. An example is [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/MPDXClientExample/AppDelegate.swift).
-    ![alt text](ReadMeAssets/configure-xcode-project/xcode-add-app-delegate.png) <br><br>
+    ![alt text](ReadMeAssets/configure-xcode-project/xcode-app-delegate.png) <br><br>
+  - AppDelegate.swift will need an instance conforming to AppConfigInterface.swift.  See the next step for setting this up.
 - Add AppConfig.swift.
     
 ### Configure Your App
