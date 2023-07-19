@@ -37,14 +37,14 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 
 ### Install MPDXiOSLib With Swift Package Manager
 
-- You can find instructions on adding package dependencies [here](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) or follow these steps for adding the MPDXiOSLib swift package.
-  - First locate Xcode package dependencies.
-    ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png)
+- [Swift Package Manager Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
+- Locate Xcode package dependencies.
+  ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png)
 
 
 ### Install MPDXiOSLib With Cocoapods
 
-- Install the cocoapods dependency manager.  Install instructions are [here](https://cocoapods.org/).
+- First install the [cocoapods dependency manager](https://cocoapods.org/).
 - Add a Podfile to your project directory.  You can review the MPDXClientExampleCocoapods Podfile for reference on setting that up [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/update-for-xcode-14.2-and-mpdx-ios-lib/ExampleProjects/Cocoapods/Podfile).  NOTE that your target name or names(if including tests) will be different than the MPDXClientExampleCocoapods target name.  The main target name will match the Xcode project name.
 - Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure and build your app.
 
