@@ -36,7 +36,7 @@ class AppConfig: AppConfigInterface {
         return CoreDatabaseConfiguration(
             loadFromPodResourceBundleName: "MPDXiOSLib_CoreDataModel",
             dataModelFilename: "mpdxDataModel",
-            appGroupId: "group.org.cru.mpdx",
+            appGroupId: nil,
             storeSqliteFilename: "mpdxDataModel"
         )
     }

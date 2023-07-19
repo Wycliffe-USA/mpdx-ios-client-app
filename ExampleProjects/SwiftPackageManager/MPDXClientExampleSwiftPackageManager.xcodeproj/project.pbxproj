@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		452D46E52A6819170045A50A /* MPDXiOSLib in Frameworks */ = {isa = PBXBuildFile; productRef = 452D46E42A6819170045A50A /* MPDXiOSLib */; };
-		4555DC0C2A683A1E00548C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DC052A683A1E00548C48 /* AppDelegate.swift */; };
-		4555DC0D2A683A1E00548C48 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DC062A683A1E00548C48 /* AppConfig.swift */; };
-		4555DC0E2A683A1E00548C48 /* OktaUser+MPDXOktaUserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DC0A2A683A1E00548C48 /* OktaUser+MPDXOktaUserCodable.swift */; };
-		4555DC0F2A683A1E00548C48 /* OktaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DC0B2A683A1E00548C48 /* OktaUser.swift */; };
 		4575B0A62A6817D500A11377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A52A6817D500A11377 /* Assets.xcassets */; };
 		4575B0AA2A6817D500A11377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A92A6817D500A11377 /* Preview Assets.xcassets */; };
+		45A5B4932A68584E00B57EEE /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B48C2A68584E00B57EEE /* AppConfig.swift */; };
+		45A5B4942A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4902A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */; };
+		45A5B4952A68584E00B57EEE /* OktaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4912A68584E00B57EEE /* OktaUser.swift */; };
+		45A5B4962A68584E00B57EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4922A68584E00B57EEE /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4555DC032A68377300548C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4555DC052A683A1E00548C48 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4555DC062A683A1E00548C48 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		4555DC0A2A683A1E00548C48 /* OktaUser+MPDXOktaUserCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OktaUser+MPDXOktaUserCodable.swift"; sourceTree = "<group>"; };
-		4555DC0B2A683A1E00548C48 /* OktaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OktaUser.swift; sourceTree = "<group>"; };
 		4575B09E2A6817D400A11377 /* MPDXClientExampleSwiftPackageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDXClientExampleSwiftPackageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4575B0A52A6817D500A11377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPDXClientExampleSwiftPackageManager.entitlements; sourceTree = "<group>"; };
 		4575B0A92A6817D500A11377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45A5B48C2A68584E00B57EEE /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		45A5B4902A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OktaUser+MPDXOktaUserCodable.swift"; sourceTree = "<group>"; };
+		45A5B4912A68584E00B57EEE /* OktaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OktaUser.swift; sourceTree = "<group>"; };
+		45A5B4922A68584E00B57EEE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,41 +40,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4555DC042A683A1E00548C48 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				4555DC052A683A1E00548C48 /* AppDelegate.swift */,
-				4555DC062A683A1E00548C48 /* AppConfig.swift */,
-				4555DC072A683A1E00548C48 /* Share */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		4555DC072A683A1E00548C48 /* Share */ = {
-			isa = PBXGroup;
-			children = (
-				4555DC082A683A1E00548C48 /* Data */,
-			);
-			path = Share;
-			sourceTree = "<group>";
-		};
-		4555DC082A683A1E00548C48 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				4555DC092A683A1E00548C48 /* Authentication */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		4555DC092A683A1E00548C48 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				4555DC0B2A683A1E00548C48 /* OktaUser.swift */,
-				4555DC0A2A683A1E00548C48 /* OktaUser+MPDXOktaUserCodable.swift */,
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
 		4575B0952A6817D400A11377 = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +59,12 @@
 		4575B0A02A6817D400A11377 /* MPDXClientExampleSwiftPackageManager */ = {
 			isa = PBXGroup;
 			children = (
-				4555DC042A683A1E00548C48 /* App */,
-				4555DC032A68377300548C48 /* Info.plist */,
 				4575B0A52A6817D500A11377 /* Assets.xcassets */,
+				4555DC032A68377300548C48 /* Info.plist */,
 				4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */,
+				45A5B4922A68584E00B57EEE /* AppDelegate.swift */,
+				45A5B48C2A68584E00B57EEE /* AppConfig.swift */,
+				45A5B48D2A68584E00B57EEE /* Share */,
 				4575B0A82A6817D500A11377 /* Preview Content */,
 			);
 			path = MPDXClientExampleSwiftPackageManager;
@@ -109,6 +76,31 @@
 				4575B0A92A6817D500A11377 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45A5B48D2A68584E00B57EEE /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				45A5B48E2A68584E00B57EEE /* Data */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		45A5B48E2A68584E00B57EEE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				45A5B48F2A68584E00B57EEE /* Authentication */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		45A5B48F2A68584E00B57EEE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				45A5B4912A68584E00B57EEE /* OktaUser.swift */,
+				45A5B4902A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4555DC0E2A683A1E00548C48 /* OktaUser+MPDXOktaUserCodable.swift in Sources */,
-				4555DC0C2A683A1E00548C48 /* AppDelegate.swift in Sources */,
-				4555DC0D2A683A1E00548C48 /* AppConfig.swift in Sources */,
-				4555DC0F2A683A1E00548C48 /* OktaUser.swift in Sources */,
+				45A5B4962A68584E00B57EEE /* AppDelegate.swift in Sources */,
+				45A5B4932A68584E00B57EEE /* AppConfig.swift in Sources */,
+				45A5B4952A68584E00B57EEE /* OktaUser.swift in Sources */,
+				45A5B4942A68584E00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
