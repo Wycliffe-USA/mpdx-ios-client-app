@@ -96,8 +96,10 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 - Add AppConfig.swift.  Follow the same instructions when adding AppDelegate.swift.
 - Add usage descriptions. These are descriptions apple looks for when a user attempts the device access contacts or device face id. These files can't be bundled with  MPDXiOSLib and instead must be manually added to your Xcode project.
   - Download MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios-lib/archive/refs/heads/master.zip).
-  - Look for the directory /Sources/MPDXiOSLib/Resources/UsageDescriptions/ and copy this directory into your Xcode project directory where Assets.xcassets, Info.plist, and .entitlements live.
+  - In finder look for the directory /Sources/MPDXiOSLib/Resources/UsageDescriptions/ and copy this directory into your project directory where Assets.xcassets, Info.plist, and .entitlements live. Make sure you're in finder and not the Xcode project.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-usage-descriptions-directory.png) <br><br>
-  - In Xcode right click your project directory and choose Add Files and choose the Usage Descriptions directory you just added.
+  - Back in Xcode right click your project directory and choose Add Files and choose the Usage Descriptions directory you just added. Ensure Create groups is checked.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-add-files.png) <br><br>
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-add-usage-descriptions.png) <br><br>
+  - You should now see the Usage Descriptions InfoPlist files in your Xcode project.
+    ![alt text](ReadMeAssets/configure-xcode-project/xcode-usage-descriptions.png) <br><br>
