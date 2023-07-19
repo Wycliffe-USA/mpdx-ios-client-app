@@ -76,7 +76,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-project-info.png) <br><br>
 - Delete the .swift files that Xcode generated for SwiftUI projects.
   - Select the ContentView.swift and "YourProjectName"App.swift file and hit the delete key.
-  - Hit the remove to trash option.
+  - Choose the Move to Trash option.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-delete-swiftui-files.png) <br><br>
 
 
