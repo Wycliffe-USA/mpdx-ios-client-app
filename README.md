@@ -38,9 +38,12 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 ### Install MPDXiOSLib With Swift Package Manager
 
 - Do it yourself following the [Swift Package Manager Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) or follow these steps below.
-  - Locate your Xcode project package dependencies.
+  - Locate your Xcode project package dependencies and tap the add icon to add the MPDXiOSLib git repo.
     ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png) <br>
-  - Input MPDXiOSLib git repo.
+  - In the search field add the MPDXiOSLib git repo https://github.com/CruGlobal/mpdx-ios-lib.git.  
+  - Set Dependency Rule to Up to Next Minor Version.
+  - Add Package. 
+    ![alt text](ReadMeAssets/swift-package-manager/xcode-input-swift-package-mpdx-ios-lib.png) <br>
 
 
 ### Install MPDXiOSLib With Cocoapods
