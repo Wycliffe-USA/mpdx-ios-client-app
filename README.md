@@ -62,44 +62,44 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 - Now it's time to finish configuring your Xcode project. 
 - The Xcode file to open will depend on the dependency manager used. <br>  
   - For Swift Package Manager open the .xcodeproj file. <br>
-  - For Cocoapods open the .xcworkspace file (Generated from pod install). <br>
+  - For Cocoapods open the .xcworkspace file (generated from pod install). <br>
 - Configure your Xcode project build target.
-  - Delete Mac under Supported Destinations.
-  - Set Minimum Deployment to iOS 14.0.
+  - Delete Mac under Supported Destinations.  Should be iPhone and iPad.
+  - Set Minimum Deployments to iOS 14.0.
   - Set iPhone Orientation to Portrait.
   - Set iPad Orientation to Portrait, Landscape Left, Landscape Right.
   - Set Status Bar Style to Default.
   - Check Requires full screen.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-target-general.png) <br><br>
 - Configure your Xcode project info.
-  - Set the Deployment Target to iOS 14.
+  - Set the iOS Deployment Target to iOS 14.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-project-info.png) <br><br>
 - Delete the .swift files that Xcode generated for SwiftUI projects.
   - Select the ContentView.swift and "YourProjectName"App.swift file and hit the delete key.
   - Choose the Move to Trash option.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-delete-swiftui-files.png) <br><br>
 - Add Application Scene Manifest to Xcode build target info.
-  - In your Xcode target info section, locate the Custom macOS Application Target Properties section.
+  - In your Xcode target > Info section, locate the Custom macOS Application Target Properties section.
   - Tap the plus icon on the bottom row option which will bring up a new row and start typing Application Scene Manifest.  Xcode should auto find this and tap enter when it does.  You should now see the added Application Scene Manifest and that's it.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-info-plist-add-application-scene-manifest.png) <br><br>
 - Add AppDelegate.swift.
   - Right click on project folder and add new file.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-new-file.png) <br><br>
-  - Choose swift file template.
+  - Choose Swift File template.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-new-swift-file-template.png) <br><br>
   - Input AppDelegate for name and choose Create. Don't create bridging header.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-add-app-delegate.png) <br><br>
-  - If Xcode requests to configure an Objective-C briding header choose Don't Create.
-    ![alt text](ReadMeAssets/configure-xcode-project/xcode-dont-create-briding-header.png) <br><br>
+  - If Xcode requests to configure an Objective-C bridging header choose Don't Create.
+    ![alt text](ReadMeAssets/configure-xcode-project/xcode-dont-create-bridging-header.png) <br><br>
   - Complete the AppDelegate.swift implementation. An example is [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/SwiftPackageManager/MPDXClientExampleSwiftPackageManager/AppDelegate.swift).
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-app-delegate.png) <br><br>
-  - AppDelegate.swift will need an instance conforming to AppConfigInterface.swift.  See the next step for setting this up.
+  - AppDelegate.swift will need to provide an instance conforming to AppConfigInterface.swift in method override func getAppConfig().  See the next step for setting this up.
 - Add AppConfig.swift.  Follow the same instructions you used for adding the AppDelegate.swift file and add AppConfig.swift.
   - For an AppConfig.swift reference you can view that [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/SwiftPackageManager/MPDXClientExampleSwiftPackageManager/AppConfig.swift).
   - Set your apiBaseUrl: String.
   - Set your authenticationConfiguration: AuthenticationConfiguration.
-- Add usage descriptions. These are descriptions apple looks for when a user attempts to access device contacts or device face id. These files can't be bundled with  MPDXiOSLib and instead must be manually added to your Xcode project.
-  - Download MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios-lib/archive/refs/heads/master.zip).
+- IMPORTANT: Add usage descriptions. These are descriptions apple looks for when a user attempts to access their device contacts or device face id from the MPDX app.  Without these the app will crash. Since these files can't be bundled with  MPDXiOSLib, they must manually be added to your Xcode project.
+  - To manually add them first download the latest MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios-lib/archive/refs/heads/master.zip).
   - In finder look in the downloaded directory for /Sources/MPDXiOSLib/Resources/UsageDescriptions/ and copy the UsageDescriptions directory into your project directory where Assets.xcassets, Info.plist, and .entitlements live. Make sure you're in finder and not the Xcode project.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-usage-descriptions-directory.png) <br><br>
   - Back in Xcode right click your project directory and choose Add Files and choose the Usage Descriptions directory you just added. Ensure Create groups is checked.
