@@ -16,7 +16,6 @@ Follow these outlined steps to get your Xcode project setup and running against 
 - [Create A New Xcode Project](#create-a-new-xcode-project)
 - [Install The MPDXiOSLib Dependency](#install-the-mpdxioslib-dependency)
 - [Configure Your New Xcode Project](#configure-your-new-xcode-project)
-- [Configure Your App](#configure-your-app)
 
 ### Create A New Xcode Project
 
@@ -95,7 +94,3 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-app-delegate.png) <br><br>
   - AppDelegate.swift will need an instance conforming to AppConfigInterface.swift.  See the next step for setting this up.
 - Add AppConfig.swift.
-    
-### Configure Your App
-
-App configuration is done at run-time and requires that you initialize an App instance with a configuration that conforms to AppConfigInterface. You can view the example’s AppDelegate.swift and AppConfig.swift to see how this is setup.
