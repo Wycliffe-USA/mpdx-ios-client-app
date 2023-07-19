@@ -1,13 +1,15 @@
 MPDX Client Example App
 =======================
-Example project to facilitate in the creation of your templated MPDX iOS App.
+
+In this repository you will find 2 xcode example projects to facilitate in the creation of your templated MPDX iOS App.  1 project uses the Cocoapods dependency manager to pull in the MPDXiOSLib and another uses Swift Package Manager to pull in the MPDXiOSLib.
 
 ### Requirements
 
-Xcode Version: 14.2 <br>
-Swift Version: 5.7 <br>
-Minimum iOS Target: iOS 14 <br>
-MPDXiOSLib: (Supports both Cocoapods and Swift Package Manager) <br>
+Example Projects Completed in Xcode Version 14.2 <br>
+Minimum iOS Target of iOS 14 for MPDXiOSLib  <br>
+Either Cocoapods or Swift Package Manager Dependency Manager for MPDXiOSLib <br>
+
+### Steps To Create Templated MPDX iOS App
 
 Follow these outlined steps to get your Xcode project setup and running against the MPDXiOSLib code-base.
 
@@ -20,7 +22,7 @@ Follow these outlined steps to get your Xcode project setup and running against 
 
 ### Create A New Xcode Project
 
-Start by creating a new Xcode project. These instructions have been updated for Xcode 14.2 which was used in this example. Make sure to choose the following when creating your new Xcode project.
+Start by creating a new Xcode project. Make sure to choose the following when creating your new Xcode project.
 
 - For the project template choose App.
 - Ensure Use Core Data is not checked.
@@ -28,11 +30,16 @@ Start by creating a new Xcode project. These instructions have been updated for 
 
 ### Install The MPDXiOSLib Dependency
 
-Choose 1 of the next 2 steps to install the MPDXiOSLib dependency which now supports both Cocoapods and Swift Package Manager.
+Choose 1 of the next 2 steps to install the MPDXiOSLib dependency which supports both Cocoapods and Swift Package Manager.
 
 NOTE: You can view the latest MPDXiOSLib version by viewing the .podspec [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/MPDXiOSLib.podspec#L4) or you can view the latest tag [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
 
 ### Install MPDXiOSLib With Swift Package Manager
+
+- You can find instructions on adding package dependencies [here](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) or follow these steps for adding the MPDXiOSLib swift package.
+  - First locate Xcode package dependencies.
+    ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png)
+
 
 ### Install MPDXiOSLib With Cocoapods
 
