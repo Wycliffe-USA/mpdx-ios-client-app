@@ -98,7 +98,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - For an AppConfig.swift reference you can view that [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/SwiftPackageManager/MPDXClientExampleSwiftPackageManager/AppConfig.swift).
   - Set your apiBaseUrl: String.
   - Set your authenticationConfiguration: AuthenticationConfiguration.
-- IMPORTANT: Add usage descriptions. These are descriptions apple looks for when a user attempts to access their device contacts or device face id from the MPDX app.  Without these the app will crash. Since these files can't be bundled with  MPDXiOSLib, they must manually be added to your Xcode project.
+- IMPORTANT: Add usage descriptions. These are descriptions apple looks for when a user attempts to access their device contacts or device face id from the MPDX app.  Without these the app will crash. Since these files can't be bundled with  MPDXiOSLib, they must be manually added to your Xcode project.
   - To manually add them first download the latest MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios-lib/archive/refs/heads/master.zip).
   - In finder look in the downloaded directory for /Sources/MPDXiOSLib/Resources/UsageDescriptions/ and copy the UsageDescriptions directory into your project directory where Assets.xcassets, Info.plist, and .entitlements live. Make sure you're in finder and not the Xcode project.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-usage-descriptions-directory.png) <br><br>
