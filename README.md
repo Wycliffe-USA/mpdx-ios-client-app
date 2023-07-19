@@ -107,3 +107,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - You should now see the Usage Descriptions InfoPlist files in your Xcode project.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-usage-descriptions.png) <br><br>
   - That's it. You should now be able to build and run Xcode. 
+
+### App Localization
+
+Localizable.strings files are bundled in MPDXiOSLib and by default your templated MPDX App will support the following languages found [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/fastlane/.env.default#L3).
