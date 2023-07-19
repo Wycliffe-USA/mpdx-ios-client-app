@@ -8,15 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		452D46E52A6819170045A50A /* MPDXiOSLib in Frameworks */ = {isa = PBXBuildFile; productRef = 452D46E42A6819170045A50A /* MPDXiOSLib */; };
-		4555DC012A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DBFF2A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift */; };
-		4555DC022A682D7300548C48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DC002A682D7300548C48 /* ContentView.swift */; };
 		4575B0A62A6817D500A11377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A52A6817D500A11377 /* Assets.xcassets */; };
 		4575B0AA2A6817D500A11377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A92A6817D500A11377 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4555DBFF2A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDXClientExampleSwiftPackageManagerApp.swift; sourceTree = "<group>"; };
-		4555DC002A682D7300548C48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4575B09E2A6817D400A11377 /* MPDXClientExampleSwiftPackageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDXClientExampleSwiftPackageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4575B0A52A6817D500A11377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPDXClientExampleSwiftPackageManager.entitlements; sourceTree = "<group>"; };
@@ -54,8 +50,6 @@
 		4575B0A02A6817D400A11377 /* MPDXClientExampleSwiftPackageManager */ = {
 			isa = PBXGroup;
 			children = (
-				4555DBFF2A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift */,
-				4555DC002A682D7300548C48 /* ContentView.swift */,
 				4575B0A52A6817D500A11377 /* Assets.xcassets */,
 				4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */,
 				4575B0A82A6817D500A11377 /* Preview Content */,
@@ -148,8 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4555DC022A682D7300548C48 /* ContentView.swift in Sources */,
-				4555DC012A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
