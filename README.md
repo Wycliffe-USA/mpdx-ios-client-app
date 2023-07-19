@@ -79,7 +79,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - Choose the Move to Trash option.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-delete-swiftui-files.png) <br><br>
 - Add Application Scene Manifest to Xcode build target info.
-  - In your Xcode project info section, locate the Custom macOS Application Target Properties section.
+  - In your Xcode target info section, locate the Custom macOS Application Target Properties section.
   - Tap the plus icon on the bottom row option which will bring up a new row and start typing Application Scene Manifest.  Xcode should auto find this and tap enter when it does.  You should now see the added Application Scene Manifest and that's it.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-info-plist-add-application-scene-manifest.png) <br><br>
 - Add AppDelegate.swift and subclass MPDXAppDelegate.
