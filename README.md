@@ -70,9 +70,9 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - Set iPad Orientation to Portrait, Landscape Left, Landscape Right.
   - Set Status Bar Style to Default.
   - Check Requires full screen.
-    ![alt text](ReadMeAssets/configure-xcode-project/xcode-delete-swiftui-files.png) <br><br>
+    ![alt text](ReadMeAssets/configure-xcode-project/xcode-target-general.png) <br><br>
 - Delete the .swift files that Xcode generated for SwiftUI projects.  There is a ContentView.swift and {YourProjectName}App.swift file.
-  ![alt text](ReadMeAssets/configure-xcode-project/xcode-target-general.png) <br><br>
+  ![alt text](ReadMeAssets/configure-xcode-project/xcode-delete-swiftui-files.png) <br><br>
 
 
 - Open the .xcworkspace file that was created from the pod install command in the previous step.
