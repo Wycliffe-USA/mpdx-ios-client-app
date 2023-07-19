@@ -63,7 +63,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 - The Xcode file to open will depend on the dependency manager used. <br>  
   - For Swift Package Manager open the .xcodeproj file. <br>
   - For Cocoapods open the .xcworkspace file (Generated from pod install). <br>
-- Configure your Xcode project build target with the following:
+- Configure your Xcode project build target.
   - Delete Mac under Supported Destinations.
   - Set Minimum Deployment to iOS 14.0.
   - Set iPhone Orientation to Portrait.
@@ -78,6 +78,10 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - Select the ContentView.swift and "YourProjectName"App.swift file and hit the delete key.
   - Choose the Move to Trash option.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-delete-swiftui-files.png) <br><br>
+- Add Application Scene Manifest to Xcode build target info.
+  - In your Xcode project info section, locate the Custom macOS Application Target Properties section.
+  - Tap the plus icon on the bottom row option which will bring up a new row and start typing Application Scene Manifest.  Xcode should auto find this and tap enter when it does.  You should now see the added Application Scene Manifest and that's it.
+    ![alt text](ReadMeAssets/configure-xcode-project/xcode-info-plist-add-application-scene-manifest.png) <br><br>
 
 
 - Open the .xcworkspace file that was created from the pod install command in the previous step.
