@@ -7,5 +7,5 @@ use_modular_headers!
 
 target 'MPDXClientExampleCocoapods' do
 
-  pod 'MPDXiOSLib', '~> 0.5.0'
+  pod 'MPDXiOSLib', '~> 0.5.1'
 end

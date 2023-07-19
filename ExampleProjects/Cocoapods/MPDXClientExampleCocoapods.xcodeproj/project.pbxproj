@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		3DA5993CF3A60BAA81F27B18 /* libPods-MPDXClientExampleCocoapods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EE009F04A98770C92F7D18 /* libPods-MPDXClientExampleCocoapods.a */; };
-		450792DC2A619DFC001CAA58 /* MPDXClientExampleCocoapodsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450792DB2A619DFC001CAA58 /* MPDXClientExampleCocoapodsApp.swift */; };
-		450792DE2A619DFC001CAA58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450792DD2A619DFC001CAA58 /* ContentView.swift */; };
 		450792E02A619DFD001CAA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450792DF2A619DFD001CAA58 /* Assets.xcassets */; };
 		450792E42A619DFD001CAA58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450792E32A619DFD001CAA58 /* Preview Assets.xcassets */; };
+		45A5B49F2A685DDD00B57EEE /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4982A685DDD00B57EEE /* AppConfig.swift */; };
+		45A5B4A02A685DDD00B57EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B4992A685DDD00B57EEE /* AppDelegate.swift */; };
+		45A5B4A12A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B49D2A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */; };
+		45A5B4A22A685DDD00B57EEE /* OktaUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B49E2A685DDD00B57EEE /* OktaUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12C73AB442232E641AA249B5 /* Pods-MPDXClientExampleCocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPDXClientExampleCocoapods.debug.xcconfig"; path = "Target Support Files/Pods-MPDXClientExampleCocoapods/Pods-MPDXClientExampleCocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 		450792D82A619DFC001CAA58 /* MPDXClientExampleCocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDXClientExampleCocoapods.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		450792DB2A619DFC001CAA58 /* MPDXClientExampleCocoapodsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPDXClientExampleCocoapodsApp.swift; sourceTree = "<group>"; };
-		450792DD2A619DFC001CAA58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		450792DF2A619DFD001CAA58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450792E12A619DFD001CAA58 /* MPDXClientExampleCocoapods.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPDXClientExampleCocoapods.entitlements; sourceTree = "<group>"; };
 		450792E32A619DFD001CAA58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		45A5B4972A685DA600B57EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		45A5B4982A685DDD00B57EEE /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		45A5B4992A685DDD00B57EEE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45A5B49D2A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OktaUser+MPDXOktaUserCodable.swift"; sourceTree = "<group>"; };
+		45A5B49E2A685DDD00B57EEE /* OktaUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OktaUser.swift; sourceTree = "<group>"; };
 		68EE009F04A98770C92F7D18 /* libPods-MPDXClientExampleCocoapods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MPDXClientExampleCocoapods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77E0C8BA8677AFF3ED6146B /* Pods-MPDXClientExampleCocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPDXClientExampleCocoapods.release.xcconfig"; path = "Target Support Files/Pods-MPDXClientExampleCocoapods/Pods-MPDXClientExampleCocoapods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,10 +64,12 @@
 		450792DA2A619DFC001CAA58 /* MPDXClientExampleCocoapods */ = {
 			isa = PBXGroup;
 			children = (
-				450792DB2A619DFC001CAA58 /* MPDXClientExampleCocoapodsApp.swift */,
-				450792DD2A619DFC001CAA58 /* ContentView.swift */,
 				450792DF2A619DFD001CAA58 /* Assets.xcassets */,
+				45A5B4972A685DA600B57EEE /* Info.plist */,
 				450792E12A619DFD001CAA58 /* MPDXClientExampleCocoapods.entitlements */,
+				45A5B4992A685DDD00B57EEE /* AppDelegate.swift */,
+				45A5B4982A685DDD00B57EEE /* AppConfig.swift */,
+				45A5B49A2A685DDD00B57EEE /* Share */,
 				450792E22A619DFD001CAA58 /* Preview Content */,
 			);
 			path = MPDXClientExampleCocoapods;
@@ -74,6 +81,31 @@
 				450792E32A619DFD001CAA58 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45A5B49A2A685DDD00B57EEE /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				45A5B49B2A685DDD00B57EEE /* Data */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		45A5B49B2A685DDD00B57EEE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				45A5B49C2A685DDD00B57EEE /* Authentication */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		45A5B49C2A685DDD00B57EEE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				45A5B49E2A685DDD00B57EEE /* OktaUser.swift */,
+				45A5B49D2A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		DDB66F8AD6895C9824A5976B /* Frameworks */ = {
@@ -90,7 +122,6 @@
 				12C73AB442232E641AA249B5 /* Pods-MPDXClientExampleCocoapods.debug.xcconfig */,
 				E77E0C8BA8677AFF3ED6146B /* Pods-MPDXClientExampleCocoapods.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450792DE2A619DFC001CAA58 /* ContentView.swift in Sources */,
-				450792DC2A619DFC001CAA58 /* MPDXClientExampleCocoapodsApp.swift in Sources */,
+				45A5B4A02A685DDD00B57EEE /* AppDelegate.swift in Sources */,
+				45A5B4A22A685DDD00B57EEE /* OktaUser.swift in Sources */,
+				45A5B49F2A685DDD00B57EEE /* AppConfig.swift in Sources */,
+				45A5B4A12A685DDD00B57EEE /* OktaUser+MPDXOktaUserCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,16 +374,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPDXClientExampleCocoapods/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -382,16 +417,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPDXClientExampleCocoapods/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

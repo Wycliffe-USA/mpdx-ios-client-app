@@ -1,8 +1,9 @@
 //
 //  OktaUser.swift
-//  MPDXClientExample
+//  MPDXClientExampleCocoapods
 //
-//  Created by Levi Eggert on 2/28/23.
+//  Created by Levi Eggert on 7/19/23.
+//  Copyright © 2023 Cru. All rights reserved.
 //
 
 import Foundation
