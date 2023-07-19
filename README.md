@@ -94,3 +94,6 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-app-delegate.png) <br><br>
   - AppDelegate.swift will need an instance conforming to AppConfigInterface.swift.  See the next step for setting this up.
 - Add AppConfig.swift.
+- Add usage descriptions. These are descriptions apple looks for when a user attempts to access contacts or face id from the device. These files can't be bundled with  MPDXiOSLib and instead must be manually added to your Xcode project.
+  - Download MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios-lib/archive/refs/heads/master.zip).
+  - Look for directory Sources/MPDXiOSLib/Resources/UsageDescriptions/ and copy this directory into your Xcode project directory where Assets.xcassets, Info.plist, and .entitlements live.
