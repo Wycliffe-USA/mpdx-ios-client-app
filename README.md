@@ -37,9 +37,10 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 
 ### Install MPDXiOSLib With Swift Package Manager
 
-- [Swift Package Manager Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
-- Locate Xcode package dependencies.
-  ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png)
+- Do it yourself following the [Swift Package Manager Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) or follow these steps below.
+  - Locate your Xcode project package dependencies.
+    ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png) <br>
+  - Input MPDXiOSLib git repo.
 
 
 ### Install MPDXiOSLib With Cocoapods
