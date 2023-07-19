@@ -30,7 +30,7 @@ Start by creating a new Xcode project. Make sure to choose the following when cr
 
 Choose 1 of the next 2 steps to install the MPDXiOSLib dependency.
 
-NOTE: You can view the latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+NOTE: You can view the latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
 
 - [Install MPDXiOSLib With Swift Package Manager](#install-mpdxioslib-with-swift-package-manager)
 - [Install MPDXiOSLib With Cocoapods](#install-mpdxioslib-with-cocoapods)
@@ -42,7 +42,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png) <br><br>
 - Enter the repo https://github.com/CruGlobal/mpdx-ios-lib.git in the search field.  
 - Set Dependency Rule to Up to Next Minor Version.
-- Set the minimum version. You can view the latest MPDXiOSLib version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+- Set the minimum version. You can view the latest MPDXiOSLib version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
 - Add the Package. 
   ![alt text](ReadMeAssets/swift-package-manager/xcode-input-swift-package-mpdx-ios-lib.png) <br><br>
 - Xcode will finish loading, then add package to target.
@@ -52,8 +52,8 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 ### Install MPDXiOSLib With Cocoapods
 
 - First install the [cocoapods dependency manager](https://cocoapods.org/).
-- Add a Podfile to your project directory.  You can review the MPDXClientExampleCocoapods Podfile for reference on setting that up [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/update-for-xcode-14.2-and-mpdx-ios-lib/ExampleProjects/Cocoapods/Podfile).  NOTE that your target name or names(if including tests) will be different than the MPDXClientExampleCocoapods target name.  The main target name will match the Xcode project name.
-- View latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+- Add a Podfile to your project directory.  You can review the MPDXClientExampleCocoapods Podfile for reference on setting that up [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/Cocoapods/Podfile).  NOTE that your target name or names(if including tests) will be different than the MPDXClientExampleCocoapods target name.  The main target name will match the Xcode project name.
+- View latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
 - Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure and build your app.
 
     
@@ -91,6 +91,8 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-add-app-delegate.png) <br><br>
   - If Xcode requests to configure an Objective-C briding header choose Don't Create.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-dont-create-briding-header.png) <br><br>
+  - Complete the AppDelegate.swift implementation. An example is [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/MPDXClientExample/AppDelegate.swift).
+    ![alt text](ReadMeAssets/configure-xcode-project/xcode-add-app-delegate.png) <br><br>
 - Add AppConfig.swift.
     
 ### Configure Your App
