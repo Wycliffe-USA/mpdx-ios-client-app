@@ -62,10 +62,18 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 - Now it's time to finish configuring your Xcode project. 
 - The Xcode file to open will depend on the dependency manager used. <br>  
   - For Swift Package Manager open the .xcodeproj file. <br>
-  - For Cocoapods open the .xcworkspace file. <br>
+  - For Cocoapods open the .xcworkspace file (Generated from pod install). <br>
+- Configure your Xcode build target with the following:
+  - Delete Mac under Supported Destinations.
+  - Set Minimum Deployments to iOS 14.0.
+  - Set iPhone Orientation to Portrait.
+  - Set iPad Orientation to Portrait, Landscape Left, Landscape Right.
+  - Set Status Bar Style to Default.
+  - Check Requires full screen.
+    ![alt text](ReadMeAssets/configure-xcode-project/xcode-delete-swiftui-files.png) <br><br>
+- Delete the .swift files that Xcode generated for SwiftUI projects.  There is a ContentView.swift and {YourProjectName}App.swift file.
+  ![alt text](ReadMeAssets/configure-xcode-project/xcode-target-general.png) <br><br>
 
-
-- TODO: Finish updating steps below.
 
 - Open the .xcworkspace file that was created from the pod install command in the previous step.
 - Locate the Info.plist file (Located in the same directory as AppDelegate.swift) and delete the node named (Application Scene Manifest).

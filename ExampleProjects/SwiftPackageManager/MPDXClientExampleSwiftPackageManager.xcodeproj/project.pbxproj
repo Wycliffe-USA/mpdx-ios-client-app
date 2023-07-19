@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		452D46E52A6819170045A50A /* MPDXiOSLib in Frameworks */ = {isa = PBXBuildFile; productRef = 452D46E42A6819170045A50A /* MPDXiOSLib */; };
-		4575B0A22A6817D400A11377 /* MPDXClientExampleSwiftPackageManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4575B0A12A6817D400A11377 /* MPDXClientExampleSwiftPackageManagerApp.swift */; };
-		4575B0A42A6817D400A11377 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4575B0A32A6817D400A11377 /* ContentView.swift */; };
+		4555DC012A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DBFF2A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift */; };
+		4555DC022A682D7300548C48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4555DC002A682D7300548C48 /* ContentView.swift */; };
 		4575B0A62A6817D500A11377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A52A6817D500A11377 /* Assets.xcassets */; };
 		4575B0AA2A6817D500A11377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A92A6817D500A11377 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4555DBFF2A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDXClientExampleSwiftPackageManagerApp.swift; sourceTree = "<group>"; };
+		4555DC002A682D7300548C48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4575B09E2A6817D400A11377 /* MPDXClientExampleSwiftPackageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDXClientExampleSwiftPackageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4575B0A12A6817D400A11377 /* MPDXClientExampleSwiftPackageManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPDXClientExampleSwiftPackageManagerApp.swift; sourceTree = "<group>"; };
-		4575B0A32A6817D400A11377 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4575B0A52A6817D500A11377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPDXClientExampleSwiftPackageManager.entitlements; sourceTree = "<group>"; };
 		4575B0A92A6817D500A11377 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,8 +54,8 @@
 		4575B0A02A6817D400A11377 /* MPDXClientExampleSwiftPackageManager */ = {
 			isa = PBXGroup;
 			children = (
-				4575B0A12A6817D400A11377 /* MPDXClientExampleSwiftPackageManagerApp.swift */,
-				4575B0A32A6817D400A11377 /* ContentView.swift */,
+				4555DBFF2A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift */,
+				4555DC002A682D7300548C48 /* ContentView.swift */,
 				4575B0A52A6817D500A11377 /* Assets.xcassets */,
 				4575B0A72A6817D500A11377 /* MPDXClientExampleSwiftPackageManager.entitlements */,
 				4575B0A82A6817D500A11377 /* Preview Content */,
@@ -106,6 +106,7 @@
 				TargetAttributes = {
 					4575B09D2A6817D400A11377 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -147,8 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4575B0A42A6817D400A11377 /* ContentView.swift in Sources */,
-				4575B0A22A6817D400A11377 /* MPDXClientExampleSwiftPackageManagerApp.swift in Sources */,
+				4555DC022A682D7300548C48 /* ContentView.swift in Sources */,
+				4555DC012A682D7300548C48 /* MPDXClientExampleSwiftPackageManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MPDXClientExampleSwiftPackageManager/MPDXClientExampleSwiftPackageManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -283,11 +285,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -295,8 +298,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.cru.MPDXClientExampleSwiftPackageManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MPDXClientExampleSwiftPackageManager/MPDXClientExampleSwiftPackageManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -321,11 +328,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -333,7 +341,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.cru.MPDXClientExampleSwiftPackageManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
