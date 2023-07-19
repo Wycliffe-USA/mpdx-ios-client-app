@@ -82,18 +82,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - In your Xcode project info section, locate the Custom macOS Application Target Properties section.
   - Tap the plus icon on the bottom row option which will bring up a new row and start typing Application Scene Manifest.  Xcode should auto find this and tap enter when it does.  You should now see the added Application Scene Manifest and that's it.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-info-plist-add-application-scene-manifest.png) <br><br>
-
-
-- Open the .xcworkspace file that was created from the pod install command in the previous step.
-- Locate the Info.plist file (Located in the same directory as AppDelegate.swift) and delete the node named (Application Scene Manifest).
-
-![alt text](ReadMeAssets/xcode-info-plist-delete-scene-manifest.png)
-
-- Delete these 3 files SceneDelegate.swift, Main.storyboard, and ViewController.swift.
-
-- Select your main target then select the general tab.  In the Deployment Info section remove Main as the Main Interface.  This box should be empty.  Set your deployment target to iOS 14 and check mark the devices and orientations.
-
-![alt text](ReadMeAssets/xcode-target-general-deployment-info.png)
+- Add AppDelegate.swift and subclass MPDXAppDelegate.
     
 ### Configure Your App
 
