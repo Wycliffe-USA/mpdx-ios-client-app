@@ -4,7 +4,7 @@ MPDX Client Example App
 Includes Swift Package Manager and Cocoapods example projects to facilitate in the creation of your templated MPDX iOS App.
 
 - [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
-- [Configuring AppConfigInterface.swift](#appconfiginterface.swift)
+- [Configuring AppConfig](#configuring-appconfig)
 - [Distribution](#distribution)
 
 ### Requirements
@@ -118,7 +118,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 Localizable.strings files are bundled in MPDXiOSLib and by default your templated MPDX App will support the following languages found [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/fastlane/.env.default#L3).
 
 
-### AppConfigInterface.swift
+### Configuring AppConfig
 
 The AppConfigInterface.swift exists to configure anything specific to your app.  When creating the AppDelegate.swift you will override MPDXAppDelegate getAppConfig() to return your own instance with configuration settings.  AppConfigInterface.swift contains the following configuration attributes.
 
