@@ -3,6 +3,10 @@ MPDX Client Example App
 
 Includes Swift Package Manager and Cocoapods example projects to facilitate in the creation of your templated MPDX iOS App.
 
+- [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
+- [Configuring AppConfigInterface.swift](#appconfiginterface.swift)
+- [Distribution](#distribution)
+
 ### Requirements
 
 - Xcode Version: 14.2 <br>
