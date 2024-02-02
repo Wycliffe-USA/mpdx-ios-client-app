@@ -3,6 +3,10 @@ MPDX Client Example App
 
 Includes Swift Package Manager and Cocoapods example projects to facilitate in the creation of your templated MPDX iOS App.
 
+- [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
+- [Configuring AppConfig](#configuring-appconfig)
+- [Distribution](#distribution)
+
 ### Requirements
 
 - Xcode Version: 14.2 <br>
@@ -112,3 +116,55 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 ### App Localization
 
 Localizable.strings files are bundled in MPDXiOSLib and by default your templated MPDX App will support the following languages found [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/fastlane/.env.default#L3).
+
+
+### Configuring AppConfig
+
+The AppConfigInterface.swift exists to configure anything specific to your app.  When creating the AppDelegate.swift you will override MPDXAppDelegate getAppConfig() to return your own instance with configuration settings.  AppConfigInterface.swift contains the following configuration attributes.
+
+###### - apiBaseUrl: String
+This is the base url that points to your API.  For example MPDX Staging uses https://api.stage.mpdx.org
+###### - authenticationConfiguration: AuthenticationConfiguration
+
+###### - coreDatabaseConfiguration: CoreDatabaseConfiguration
+###### - deepLinkingConfiguration: DeepLinkingConfiguration?
+This is optional and you can return a DeepLinkingConfiguration value to enable deeplinking into your app.  
+
+###### - firebaseConfiguration: FirebaseConfiguration?
+This is optional and you can return a FirebaseConfiguration value to enable firebase analytics.  Here you will provide the name of the GoogleService file .plist created in Firebase and added to your Xcode project.  For example in MPDX we use GoogleService-Info for the firebaseGoogleServiceFileName.
+
+###### - googleAnalyticsConfiguration: GoogleAnalyticsConfiguration?
+This is optional and you can return a GoogleAnalyticsConfiguration value to enable google analytics.  Here you will provide your google analtyics identifier.  The dispatch interval is optional and can be lowered for debugging purposes.
+###### - impersonateConfiguration: MPDXApiImpersonateConfiguration?
+For this setting return nil.  We've been experimenting with a way to impersonate users for debugging purposes only and this isn't something that is available.
+
+### Distribution
+
+For automated build distributions we use a combination of GitHub Actions and Fastlane.
+
+###### Fastlane Setup
+
+We use Bundler to setup Fastlane with our project.  See the Bundler Setup instructions here (https://docs.fastlane.tools/getting-started/ios/setup/) for getting that setup.
+
+In your Gemfile include dependencies fastlane and xcode-install.
+
+```
+source "https://rubygems.org"
+
+gem 'fastlane'
+gem 'xcode-install'
+```
+
+After adding fastlane to your project, locate your Fastfile in /fastlane/Fastfile and import our cru fastlane files. 
+
+```
+import_from_git(
+    url: "https://github.com/CruGlobal/cru-fastlane-files",
+    branch: "master",
+    path: "Fastfile"
+)
+```
+
+Next you will to get Fastlane Match setup.  This is where your code signing certificates and provisioning profiles will live for signing your app build for distribution.  See instructions here (https://docs.fastlane.tools/actions/match/) on getting Fastlane Match setup.
+
+
