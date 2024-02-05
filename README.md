@@ -140,31 +140,28 @@ For this setting return nil.  We've been experimenting with a way to impersonate
 
 ### Distribution
 
-For automated build distributions we use a combination of GitHub Actions and Fastlane.
+For automated build distributions we use a GitHub Actions workflow with a combination of Fastlane and GitHub Actions secrets.   
 
-###### Fastlane Setup
+###### GemFile
 
-We use Bundler to setup Fastlane with our project.  See the Bundler Setup instructions here (https://docs.fastlane.tools/getting-started/ios/setup/) for getting that setup.
+The client example contains a Gemfile in the project directory.  Add this same Gemfile to your project directory.  The GitHub Actions workflow will utilize this Gemfile for installing any dependencies such as Fastlane.
 
-In your Gemfile include dependencies fastlane and xcode-install.
+###### Add Fastlane
 
-```
-source "https://rubygems.org"
+This next step will involve adding Fastlane to your project.
 
-gem 'fastlane'
-gem 'xcode-install'
-```
+In your project directory create a folder named fastlane and add the following files.  
+- Fastfile
+- Matchfile
+- .gitignore
+- .env.default
 
-After adding fastlane to your project, locate your Fastfile in /fastlane/Fastfile and import our cru fastlane files. 
+###### Fastlane Match
 
-```
-import_from_git(
-    url: "https://github.com/CruGlobal/cru-fastlane-files",
-    branch: "master",
-    path: "Fastfile"
-)
-```
+This step will involve creating a private repository for storing your distribution certificate and provisioning profile for code signing.  Fastlane utilizes Match to assist in this process.  For more information on the benefits of storing those in a private repository see (https://codesigning.guide/).
 
-Next you will to get Fastlane Match setup.  This is where your code signing certificates and provisioning profiles will live for signing your app build for distribution.  See instructions here (https://docs.fastlane.tools/actions/match/) on getting Fastlane Match setup.
+For instructions on setting up Fastlane Match see (https://docs.fastlane.tools/actions/match/).
 
+Once Fastlane Match is setup and you have created a private repository open your Matchfile at fastlane/Matchfile and replace the url there with your giturl. 
 
+In .env.default set the MATCH_GIT_URL value to your private repository.
