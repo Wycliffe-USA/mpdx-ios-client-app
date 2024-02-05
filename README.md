@@ -158,10 +158,13 @@ In your project directory create a folder named fastlane and add the following f
 
 ###### Fastlane Match
 
-This step will involve creating a private repository for storing your distribution certificate and provisioning profile for code signing.  Fastlane utilizes Match to assist in this process.  For more information on the benefits of storing those in a private repository see (https://codesigning.guide/).
+This step will involve creating a private repository for storing your distribution certificate and provisioning profile for code signing.  Fastlane utilizes Match for sharing one code signing identity across your development team.  
+
+For more information on the benefits of storing your code signing credentials in a private repository see (https://codesigning.guide/).
 
 For instructions on setting up Fastlane Match see (https://docs.fastlane.tools/actions/match/).
 
-Once Fastlane Match is setup and you have created a private repository open your Matchfile at fastlane/Matchfile and replace the url there with your giturl. 
+Once Fastlane Match is setup, you will need to add the created private repository git url to a couple files in your fastlane folder.
 
-In .env.default set the MATCH_GIT_URL value to your private repository.
+- In your Matchfile, add the giturl with your created private repository git url.
+- In your .env.default set the MATCH_GIT_URL value to your private repository git url.
