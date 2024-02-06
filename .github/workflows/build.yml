@@ -46,7 +46,6 @@ jobs:
         run: bundle exec fastlane cru_shared_lane_increment_xcode_project_build_number
 
       - name: Build And Deploy For TestFlight Release
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
           MATCH_GIT_BASIC_AUTHORIZATION_PAT: ${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION_PAT }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
