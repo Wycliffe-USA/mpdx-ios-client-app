@@ -142,7 +142,7 @@ For this setting return nil.  We've been experimenting with a way to impersonate
 
 For automated build distributions we use a GitHub Actions workflow with a combination of Fastlane and GitHub Actions secrets.   
 
-###### GemFile
+###### Add Gemfile
 
 The client example contains a Gemfile in the project directory.  Add this same Gemfile to your project directory.  The GitHub Actions workflow will utilize this Gemfile for installing any dependencies such as Fastlane.
 
@@ -155,6 +155,27 @@ In your project directory create a folder named fastlane and add the following f
 - Matchfile
 - .gitignore
 - .env.default
+
+###### Fastfile
+
+For the Fastfile copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/Fastfile).
+
+###### Matchfile
+
+For the Matchfile copy the contents from the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/Matchfile).
+
+IMPORTANT: The git URL will need to be your own private repository git url for code signing.  See the section below for Fastlane Match.
+
+
+###### .gitignore
+
+For the .gitignore copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/.gitignore).
+
+Fastlane creates an AppleAppStoreApi.json file which is used for the App Store Connect API so this file needs to be ignored.
+
+###### .env.default
+
+For the .env.default copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/.env.default).
 
 ###### Fastlane Match
 
