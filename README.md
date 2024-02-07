@@ -175,7 +175,26 @@ Fastlane creates an AppleAppStoreApi.json file which is used for the App Store C
 
 ###### .env.default
 
-For the .env.default copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/.env.default).
+For the .env.default copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/.env.default).  You will need to update some values that are specific to your app.
+
+APP_RELEASE_BUNDLE_IDENTIFIER - this value will be your app store app bundle id.
+APP_STORE_CONNECT_API_KEY_JSON_FILE_PATH = this value must match the mpdx client example.
+
+## Code Signing 
+CODE_SIGNING_APP_BUNDLE_IDS - this value will be your app store app bundle id.
+CODE_SIGNING_PROVISIONING_PROFILE_NAMES - this value would replace org.cru.mpdxclientexample with your app store app bundle id.
+CODE_SIGNING_TARGETS - this value is the main target for your app.
+CODE_SIGNING_TEAM_ID - this value will match your team id in the apple developer membership.
+
+## Match
+MATCH_GIT_BRANCH = "master"
+MATCH_GIT_URL - this value will match the git url for the created code signing repo.
+MATCH_KEYCHAIN_NAME = "orgcrumpdxclientexample"
+
+## Gym
+GYM_RELEASE_APP_BUNDLE_IDENTIFIER - this value 
+GYM_RELEASE_PROVISIONING_PROFILE = "match AppStore org.cru.mpdxclientexample"
+GYM_RELEASE_SCHEME = "MPDXClientExampleSwiftPackageManager"
 
 ###### Fastlane Match
 
