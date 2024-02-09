@@ -30,6 +30,7 @@
 		9112B2532B606751006483B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9112B2542B606751006483B5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9112B2552B606751006483B5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91DA5DC02B7670B90056FE20 /* Wycliffe MyPD.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wycliffe MyPD.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		9112B2352B6025FB006483B5 /* Wycliffe MyPD */ = {
 			isa = PBXGroup;
 			children = (
+				91DA5DC02B7670B90056FE20 /* Wycliffe MyPD.entitlements */,
 				9112B24B2B60572E006483B5 /* Wycliffe-MyPD-Info.plist */,
 				9112B23A2B6025FD006483B5 /* Assets.xcassets */,
 				9112B23C2B6025FD006483B5 /* Preview Content */,
@@ -326,6 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Wycliffe MyPD/Wycliffe MyPD.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -369,6 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Wycliffe MyPD/Wycliffe MyPD.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
