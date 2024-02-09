@@ -1,5 +1,5 @@
 /* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "Cela permettra à vos contacts sélectionnés d'être importés dans MPDX.";
+"NSContactsUsageDescription" = "Cela permettra à vos contacts sélectionnés d'être importés dans Wycliffe MyPD.";
 
 /* Face ID Usage Description */
-"NSFaceIDUsageDescription" = "MPDX utilise FaceID pour déverrouiller votre compte en toute sécurité.";
+"NSFaceIDUsageDescription" = "Wycliffe MyPD utilise FaceID pour déverrouiller votre compte en toute sécurité.";

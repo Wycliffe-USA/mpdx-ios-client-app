@@ -1,5 +1,5 @@
 /* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "Bu, seçtiğiniz kişilerin MPDX'e aktarılmasına izin verecektir.";
+"NSContactsUsageDescription" = "Bu, seçtiğiniz kişilerin Wycliffe MyPD'e aktarılmasına izin verecektir.";
 
 /* Face ID Usage Description */
-"NSFaceIDUsageDescription" = "MPDX, hesabınızın güvenli bir şekilde kilidini açmak için FaceID'yi kullanır.";
+"NSFaceIDUsageDescription" = "Wycliffe MyPD, hesabınızın güvenli bir şekilde kilidini açmak için FaceID'yi kullanır.";
