@@ -1,5 +1,5 @@
 /* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "이렇게 하면 선택한 연락처를 Wycliffe MyPD로 가져올 수 있습니다.";
+"NSContactsUsageDescription" = "이렇게 하면 선택한 연락처를 Wycliffe MyPD로 가져와 서버에 업로드할 수 있습니다.";
 
 /* Face ID Usage Description */
 "NSFaceIDUsageDescription" = "Wycliffe MyPD는 FaceID를 사용하여 계정을 안전하게 잠금 해제합니다.";

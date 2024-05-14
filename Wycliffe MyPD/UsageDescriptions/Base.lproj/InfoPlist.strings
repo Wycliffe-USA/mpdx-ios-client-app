@@ -1,5 +1,5 @@
 /* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "This will allow your selected contacts to be imported into Wycliffe MyPD.";
+"NSContactsUsageDescription" = "This will allow your selected contacts to be imported into Wycliffe MyPD and uploaded to our servers.";
 
 /* Face ID Usage Description */
 "NSFaceIDUsageDescription" = "Wycliffe MyPD uses FaceID to securely unlock your account.";

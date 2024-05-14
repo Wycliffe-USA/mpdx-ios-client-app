@@ -1,5 +1,5 @@
 /* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "Dadurch können Ihre ausgewählten Kontakte in Wycliffe MypD importiert werden.";
+"NSContactsUsageDescription" = "Hierdoor kunnen uw geselecteerde contacten worden geïmporteerd in Wycliffe MyPD en worden geüpload naar onze servers.";
 
 /* Face ID Usage Description */
 "NSFaceIDUsageDescription" = "Wycliffe MyPD verwendet FaceID, um Ihr Konto sicher zu entsperren.";

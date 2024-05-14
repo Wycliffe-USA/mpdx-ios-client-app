@@ -1,5 +1,5 @@
 /* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "سيسمح هذا باستيراد جهات الاتصال المحددة إلى Wycliffe MyPD.";
+"NSContactsUsageDescription" = "سيسمح ذلك باستيراد جهات الاتصال المحددة إلى Wycliffe MyPD وتحميلها على خوادمنا.";
 
 /* Face ID Usage Description */
 "NSFaceIDUsageDescription" = "يستخدم Wycliffe MyPD FaceID لفتح حسابك بأمان.";
