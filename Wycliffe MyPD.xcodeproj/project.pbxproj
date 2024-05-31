@@ -379,6 +379,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Wycliffe MyPD/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 8RN78QKV8J;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wycliffe-MyPD-Info.plist";

@@ -3,6 +3,9 @@ MPDX Client App
 Instrucitons for building this app, taken from Cru's mpdx-ios-client-example-app
 Includes Swift Package Manager and Cocoapods example projects to facilitate in the creation of your templated MPDX iOS App.
 
+- [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
+- [Configuring AppConfig](#configuring-appconfig)
+- [Distribution](#distribution)
 
 ### Requirements
 
@@ -113,3 +116,95 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 ### App Localization
 
 Localizable.strings files are bundled in MPDXiOSLib and by default your templated MPDX App will support the following languages found [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/fastlane/.env.default#L3).
+
+
+### Configuring AppConfig
+
+The AppConfigInterface.swift exists to configure anything specific to your app.  When creating the AppDelegate.swift you will override MPDXAppDelegate getAppConfig() to return your own instance with configuration settings.  AppConfigInterface.swift contains the following configuration attributes.
+
+###### - apiBaseUrl: String
+This is the base url that points to your API.  For example MPDX Staging uses https://api.stage.mpdx.org
+###### - authenticationConfiguration: AuthenticationConfiguration
+
+###### - coreDatabaseConfiguration: CoreDatabaseConfiguration
+###### - deepLinkingConfiguration: DeepLinkingConfiguration?
+This is optional and you can return a DeepLinkingConfiguration value to enable deeplinking into your app.  
+
+###### - firebaseConfiguration: FirebaseConfiguration?
+This is optional and you can return a FirebaseConfiguration value to enable firebase analytics.  Here you will provide the name of the GoogleService file .plist created in Firebase and added to your Xcode project.  For example in MPDX we use GoogleService-Info for the firebaseGoogleServiceFileName.
+
+###### - googleAnalyticsConfiguration: GoogleAnalyticsConfiguration?
+This is optional and you can return a GoogleAnalyticsConfiguration value to enable google analytics.  Here you will provide your google analtyics identifier.  The dispatch interval is optional and can be lowered for debugging purposes.
+###### - impersonateConfiguration: MPDXApiImpersonateConfiguration?
+For this setting return nil.  We've been experimenting with a way to impersonate users for debugging purposes only and this isn't something that is available.
+
+### Distribution
+
+For automated build distributions we use a GitHub Actions workflow with a combination of Fastlane and GitHub Actions secrets.   
+
+###### Add Gemfile
+
+The client example contains a Gemfile in the project directory.  Add this same Gemfile to your project directory.  The GitHub Actions workflow will utilize this Gemfile for installing any dependencies such as Fastlane.
+
+###### Add Fastlane
+
+This next step will involve adding Fastlane to your project.
+
+In your project directory create a folder named fastlane and add the following files.  
+- Fastfile
+- Matchfile
+- .gitignore
+- .env.default
+
+###### Fastfile
+
+For the Fastfile copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/Fastfile).
+
+###### Matchfile
+
+For the Matchfile copy the contents from the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/Matchfile).
+
+IMPORTANT: The git URL will need to be your own private repository git url for code signing.  See the section below for Fastlane Match.
+
+
+###### .gitignore
+
+For the .gitignore copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/.gitignore).
+
+Fastlane creates an AppleAppStoreApi.json file which is used for the App Store Connect API so this file needs to be ignored.
+
+###### .env.default
+
+For the .env.default copy the same contents as in the client example (https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/fastlane/.env.default).  You will need to update some values that are specific to your app.
+
+APP_RELEASE_BUNDLE_IDENTIFIER - this value will be your app store app bundle id.
+APP_STORE_CONNECT_API_KEY_JSON_FILE_PATH = this value must match the mpdx client example.
+
+## Code Signing 
+CODE_SIGNING_APP_BUNDLE_IDS - this value will be your app store app bundle id.
+CODE_SIGNING_PROVISIONING_PROFILE_NAMES - this value would replace org.cru.mpdxclientexample with your app store app bundle id.
+CODE_SIGNING_TARGETS - this value is the main target for your app.
+CODE_SIGNING_TEAM_ID - this value will match your team id in the apple developer membership.
+
+## Match
+MATCH_GIT_BRANCH = "master"
+MATCH_GIT_URL - this value will match the git url for the created code signing repo.
+MATCH_KEYCHAIN_NAME = "orgcrumpdxclientexample"
+
+## Gym
+GYM_RELEASE_APP_BUNDLE_IDENTIFIER - this value 
+GYM_RELEASE_PROVISIONING_PROFILE = "match AppStore org.cru.mpdxclientexample"
+GYM_RELEASE_SCHEME = "MPDXClientExampleSwiftPackageManager"
+
+###### Fastlane Match
+
+This step will involve creating a private repository for storing your distribution certificate and provisioning profile for code signing.  Fastlane utilizes Match for sharing one code signing identity across your development team.  
+
+For more information on the benefits of storing your code signing credentials in a private repository see (https://codesigning.guide/).
+
+For instructions on setting up Fastlane Match see (https://docs.fastlane.tools/actions/match/).
+
+Once Fastlane Match is setup, you will need to add the created private repository git url to a couple files in your fastlane folder.
+
+- In your Matchfile, add the giturl with your created private repository git url.
+- In your .env.default set the MATCH_GIT_URL value to your private repository git url.
